@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79abd48a-49f5-4ebf-9d5e-41b6517e0e49" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/chap2/variable.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/chap2/var_variable.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +28,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variable.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="variable.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chap2/variable.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="var_variable.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chap2/var_variable.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -60,6 +70,7 @@
         <option value="$PROJECT_DIR$/chap2/hello2.php" />
         <option value="$PROJECT_DIR$/chap2/hello.php" />
         <option value="$PROJECT_DIR$/chap2/variable.php" />
+        <option value="$PROJECT_DIR$/chap2/var_variable.php" />
       </list>
     </option>
   </component>
@@ -149,7 +160,7 @@
       <option name="presentableId" value="Default" />
       <updated>1515243077419</updated>
       <workItem from="1515243078694" duration="41000" />
-      <workItem from="1515243142791" duration="6075000" />
+      <workItem from="1515243142791" duration="6329000" />
     </task>
     <task id="LOCAL-00001" summary="add phpstorm config file">
       <created>1515245737611</created>
@@ -179,11 +190,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515280900204</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add variable.php&#10;&#10;p44">
+      <created>1515282374581</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1515282374581</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6116000" />
+    <option name="totallyTimeSpent" value="6370000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -229,7 +247,8 @@
     <MESSAGE value="add hello.php" />
     <MESSAGE value="add hello.php&#10;&#10;p32" />
     <MESSAGE value="add hello2.php&#10;&#10;p40" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hello2.php&#10;&#10;p40" />
+    <MESSAGE value="add variable.php&#10;&#10;p44" />
+    <option name="LAST_COMMIT_MESSAGE" value="add variable.php&#10;&#10;p44" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -280,6 +299,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap2/var_variable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding />
         </state>
       </provider>
