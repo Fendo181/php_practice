@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79abd48a-49f5-4ebf-9d5e-41b6517e0e49" name="Default" comment="" />
+    <list default="true" id="79abd48a-49f5-4ebf-9d5e-41b6517e0e49" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/chap2/variable.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +18,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hello.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hello.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chap2/hello.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="variable.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chap2/variable.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -46,6 +59,7 @@
         <option value="$PROJECT_DIR$/chap2_basic/hello.php" />
         <option value="$PROJECT_DIR$/chap2/hello2.php" />
         <option value="$PROJECT_DIR$/chap2/hello.php" />
+        <option value="$PROJECT_DIR$/chap2/variable.php" />
       </list>
     </option>
   </component>
@@ -135,7 +149,7 @@
       <option name="presentableId" value="Default" />
       <updated>1515243077419</updated>
       <workItem from="1515243078694" duration="41000" />
-      <workItem from="1515243142791" duration="5955000" />
+      <workItem from="1515243142791" duration="6075000" />
     </task>
     <task id="LOCAL-00001" summary="add phpstorm config file">
       <created>1515245737611</created>
@@ -169,7 +183,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5996000" />
+    <option name="totallyTimeSpent" value="6116000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -258,6 +272,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap2/variable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding />
         </state>
       </provider>
