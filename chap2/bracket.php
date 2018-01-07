@@ -17,4 +17,5 @@ $data[0] = '三谷';
 // 末尾に追加
 $data[] = '菊池';
 
-var_dump($data);
+//var_dump($data);
+print_r($data);
