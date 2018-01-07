@@ -8,5 +8,6 @@
 
 $title = 'endo.com';
 
-print "僕のサイトのドメインは{$title}";
+//print "僕のサイトのドメインは{$title}";
+print "僕のサイトのドメインは${title}";
 print '僕のサイトのドメインは{$title}';
