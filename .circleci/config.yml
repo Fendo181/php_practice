@@ -8,6 +8,9 @@ jobs:
       - run:
           name: Greeting
           command: echo Hello, world.
+      -run:
+          name: php-cs-fix-v2
+          command: echo PHP-FIX
       - run:
           name: Print the Current Time
           command: date
