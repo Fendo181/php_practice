@@ -15,5 +15,3 @@ $msg = <<<EOD
 EOD;
 
 print $msg;
-
-
