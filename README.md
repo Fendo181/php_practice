@@ -11,14 +11,13 @@
 
 ## php-cs-fixer
 
-[php-cs-fixer.phar]()
-](http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar)をディレクトリーに落としてくる。
+[php-cs-fixer.phar](http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar)をディレクトリーに落としてくる。
 
 ```php
 php php-cs-fixer.phar fix /path/to/dir
 ``` 
 
->-[PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
+>[PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
 
 
 ## 参考資料
