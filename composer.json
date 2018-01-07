@@ -1,0 +1,13 @@
+{
+    "name": "endu/php_repos",
+    "authors": [
+        {
+            "name": "Fendo181",
+            "email": "fendo181git@gmail.com"
+        }
+    ],
+
+    "require": {
+        "friendsofphp/php-cs-fixer": "^2.9"
+    }
+}
