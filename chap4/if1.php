@@ -13,3 +13,6 @@ if($x === 10){
 } else {
     print "THIS is not 10";
 }
+
+$y = 20;
+print $y === 20 ? 'This is 20' : 'Tjis is not 20';
