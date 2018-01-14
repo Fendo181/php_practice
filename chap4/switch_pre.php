@@ -6,7 +6,7 @@
  * Time: 8:26
  */
 
-$rank = '5';
+$rank = '10';
 
 if ($rank == 5){
     print '5';
