@@ -14,7 +14,7 @@ for($i = 1; $i < 4; $i++){
             $result = $i * $i;
         case 2:
             //  switch文内ではbreakとして働く
-            continue;
+            continue 2;
     }
     print "{$i}の二乗は{$result}です!";
     echo PHP_EOL;
