@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 // ユーザ定義関数の第一歩は重複をなくすこと
 // $base = 8;
 // $hight = 10;
