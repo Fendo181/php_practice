@@ -27,3 +27,13 @@ print_r($data2);
 //    [1] => 1
 //    [2] => 9
 //)
+
+//値でソートを行う、
+$data3 = ['endo'=> 1,'takahashi' => 3,'amazon' => 2];
+asort($data3,SORT_STRING);
+print_r($data3);
+
+//キーでソートを行う
+$data4 = ['endo'=> 1,'takahashi' => 3,'amazon' => 2];
+ksort($data4,SORT_STRING);
+print_r($data4);
