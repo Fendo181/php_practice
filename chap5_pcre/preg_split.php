@@ -18,6 +18,15 @@
 
 $str = "2016-05-14";
 $str2 = "2017/04/32";
-$result = (preg_split('|[/. \-]|',$str2));
+$result = (preg_split('|[/. \-]|',$str2,-1,PREG_SPLIT_DELIM_CAPTURE));
 
-print "{$result[0]}年{$result[1]}月{$result[2]}日";
+print_r($result);
+
+//print "{$result[0]}年{$result[1]}月{$result[2]}日";
+
+//Array
+//(
+//[0] => 2017
+//    [1] => 04
+//    [2] => 32
+//)
