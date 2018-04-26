@@ -16,6 +16,7 @@
 - 第4章:[制御構文](https://github.com/Fendo181/php_repos/pull/5)
 - 第5章:[組み込み関数](https://github.com/Fendo181/php_repos/pull/6)
 - 第5章:[組み込み関数-正規表現](https://github.com/Fendo181/php_repos/pull/9)
+  - [正規表現のルール](https://github.com/Fendo181/php_repos/tree/master/chap5_pcre)
 - 第6章:[ユーザ定義関数](https://github.com/Fendo181/php_repos/pull/8)
 - 第7章:標準クラスライブラリ
 - 第8章:リクエスト情報
