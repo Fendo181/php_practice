@@ -9,6 +9,18 @@
 - PHPの文法を学ぶ。
 - オブジェクト指向になれる。
 
+### 学んだ範囲
+
+- 第2章:[基本構文](https://github.com/Fendo181/php_repos/pull/3)
+- 第3章:[演算子](https://github.com/Fendo181/php_repos/pull/4)
+- 第4章:[制御構文](https://github.com/Fendo181/php_repos/pull/5)
+- 第5章:[組み込み関数](https://github.com/Fendo181/php_repos/pull/6)
+- 第5章:[組み込み関数-正規表現](https://github.com/Fendo181/php_repos/pull/9)
+- 第6章:[ユーザ定義関数](https://github.com/Fendo181/php_repos/pull/8)
+- 第7章:標準クラスライブラリ
+- 第8章:リクエスト情報
+
+
 ## php-cs-fixer
 
 [php-cs-fixer.phar](http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar)をディレクトリーに落としてくる。
@@ -18,6 +30,7 @@ php php-cs-fixer.phar fix /path/to/dir
 ``` 
 
 >[PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
+
 
 
 ## 参考資料
