@@ -17,4 +17,5 @@ class EleteBusinessPerson extends BusinessPerson
 
 $elete_business_person = new EleteBusinessPerson('野本', '承太郎');
 $elete_business_person->work();
+$elete_business_person->showName();
 echo PHP_EOL;
