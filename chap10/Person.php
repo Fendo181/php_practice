@@ -21,11 +21,11 @@ class Person
     public function showName()
     {
         print "<p>僕の名前は{$this->firstName}{$this->lastName}です!</p>";
-        echo PHP_EOL;
     }
 }
 
 $human = new Person("F","endo181");
 $human->showName();
+echo PHP_EOL;
 
 
