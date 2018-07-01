@@ -8,7 +8,7 @@
 
 require_once "Person.php";
 
-final class BusinessPerson extends Person
+class BusinessPerson extends Person
 {
     public function work(){
         print "<p>僕の名前は{$this->firstName}{$this->lastName}です!</p>\";";
