@@ -6,7 +6,7 @@
  * Time: 8:55
  */
 
-class Figure {
+abstract class Figure {
     // プロパティを定義
     protected $width;
     protected $height;
@@ -17,10 +17,8 @@ class Figure {
         $this->height=$height;
     }
 
-    //面積を求める。
-    public function getArea() :float
-    {
-        return 0;
-    }
+    //抽象メソッド(かならずサブクラスでメソッドオーバライドさせておく必要がある)
+    //中身を記述してはならない。
+    protected abstract  function getArea() :float;
 }
 
