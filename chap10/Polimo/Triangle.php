@@ -8,8 +8,18 @@
 
 require_once 'Figure.php';
 
-class Triangle extends Figure
-{
+class Triangle implements IFigure {
+
+    // プロパティを定義
+    private $width;
+    private $height;
+
+    public function __construct(float $width, float $height)
+    {
+            $this->width = $width;
+            $this->height = $height;
+    }
+
     // メソッドをオーバライドする
     // 三角形の面積
     public function getArea() :float

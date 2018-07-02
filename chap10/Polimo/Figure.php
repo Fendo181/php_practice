@@ -6,19 +6,8 @@
  * Time: 8:55
  */
 
-abstract class Figure {
-    // プロパティを定義
-    protected $width;
-    protected $height;
-
-    public function __construct(float $width, float $height)
-    {
-        $this->width = $width;
-        $this->height=$height;
-    }
-
-    //抽象メソッド(かならずサブクラスでメソッドオーバライドさせておく必要がある)
-    //中身を記述してはならない。
-    protected abstract  function getArea() :float;
+// インターフェース
+// 配下が全て抽象メソッドなので、abstractを宣言しなくてもよい
+interface IFigure {
+    function getArea() : float;
 }
-
