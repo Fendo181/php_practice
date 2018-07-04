@@ -18,6 +18,5 @@ class Fax {
 }
 
 $fx = new Fax();
-echo $fx->starting;
 $fx->run();
 $fx->send();
