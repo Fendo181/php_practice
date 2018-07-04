@@ -10,7 +10,8 @@ require_once "BusinessPerson.php";
 
 class EleteBusinessPerson extends BusinessPerson
 {
-    public function work(){
+    public function work()
+    {
         print "<p>僕の名前は{$this->firstName}{$this->lastName}はバリバリ働いています!</p>\";";
     }
 }

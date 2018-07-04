@@ -8,7 +8,8 @@
 
 require_once 'Figure.php';
 
-class Triangle implements IFigure {
+class Triangle implements IFigure
+{
 
     // プロパティを定義
     private $width;
@@ -16,8 +17,8 @@ class Triangle implements IFigure {
 
     public function __construct(float $width, float $height)
     {
-            $this->width = $width;
-            $this->height = $height;
+        $this->width = $width;
+        $this->height = $height;
     }
 
     // メソッドをオーバライドする

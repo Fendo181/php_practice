@@ -8,16 +8,19 @@
 
 //型を宣言する
 
-interface IFax {
-    function send();
+interface IFax
+{
+    public function send();
 }
 
-interface IPrinter {
-    function print();
+interface IPrinter
+{
+    public function print();
 }
 
 // 実装を宣言する
-trait FaxTrait {
+trait FaxTrait
+{
     public function send()
     {
         print 'sending fax...sended!';
@@ -25,8 +28,10 @@ trait FaxTrait {
     }
 }
 
-trait PrinterTrait {
-    public function print() {
+trait PrinterTrait
+{
+    public function print()
+    {
         print 'printing completed';
         echo PHP_EOL;
     }
@@ -36,7 +41,8 @@ trait PrinterTrait {
 // interfaceが型(そのメソッドを実装ないと駄目だよ〜)
 // traitが実装(再利用可能な実装をするよ~)
 
-class FaxPrinter implements IFax, IPrinter {
+class FaxPrinter implements IFax, IPrinter
+{
     use FaxTrait, PrinterTrait;
 }
 

@@ -8,18 +8,20 @@
 
 abstract class Animal
 {
-    public abstract function outputVoice(): string;
+    abstract public function outputVoice(): string;
 }
 
-class Cat extends Animal {
-    public final function outputVoice(): string
+class Cat extends Animal
+{
+    final public function outputVoice(): string
     {
         // TODO: Implement outputVoice() method.
         return "にゃん";
     }
 }
 
-class Dog extends Animal {
+class Dog extends Animal
+{
     public function outputVoice(): string
     {
         // TODO: Implement outputVoice() method.
@@ -35,7 +37,8 @@ $dog = new Dog();
 print $dog->outputVoice();
 
 //継承しようとすると、エラーがでる
-class Bird extends Dog {
+class Bird extends Dog
+{
     public function outputVoice(): string
     {
         // TODO: Implement outputVoice() method.

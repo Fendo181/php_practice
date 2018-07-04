@@ -9,5 +9,5 @@
 
 require_once 'Foreigner.php';
 
-$f = new Foreigner('菊池','通称"kikuchi1201','翔太');
+$f = new Foreigner('菊池', '通称"kikuchi1201', '翔太');
 $f->show();

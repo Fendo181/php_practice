@@ -8,11 +8,13 @@
 
 require_once 'MachineTrait.php';
 
-class Fax {
+class Fax
+{
     // トレイトをインポートする
     use MachineTrait; ///この時点でFaxクラスにはプロパティもメソッドも使えるようになっている
 
-    public function send() {
+    public function send()
+    {
         print 'sendeing Fax...sended!';
     }
 }

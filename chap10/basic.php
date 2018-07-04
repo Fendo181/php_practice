@@ -6,7 +6,7 @@
  * Time: 23:26
  */
 
-require_once ('Person1.php');
+require_once('Person1.php');
 
 $person = new Person();
 var_dump($person);

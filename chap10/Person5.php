@@ -17,11 +17,10 @@ class Person
         $this->firstName=$firstName;
     }
 
-    public function __destruct( )
+    public function __destruct()
     {
         echo PHP_EOL;
         echo "オブジェクトが破壊されました。";
-
     }
 
     public function showName()
@@ -30,5 +29,5 @@ class Person
     }
 }
 
-$human = new Person("F","endo181");
+$human = new Person("F", "endo181");
 $human->showName();

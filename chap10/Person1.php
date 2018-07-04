@@ -6,6 +6,6 @@
  * Time: 23:21
  */
 
-class Person {
-
+class Person
+{
 }

@@ -8,12 +8,10 @@
 
 class MyClass
 {
-
     public static function square($width, $hight)
     {
         return $width*$hight;
     }
-
 }
 
-echo MyClass::square(10,12);
+echo MyClass::square(10, 12);

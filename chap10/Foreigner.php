@@ -16,7 +16,7 @@ class Foreigner extends Person
     public function __construct(string $lastNmae, string $middleName, string $firstName)
     {
         //スーパクラスのコンストラクタをオーバライド
-        parent::__construct($lastNmae,$firstName);
+        parent::__construct($lastNmae, $firstName);
         // $miidleNameを初期化する。
         $this->middleName = $middleName;
     }
@@ -26,4 +26,3 @@ class Foreigner extends Person
         print "<p>僕の名前は{$this->firstName} {$this->middleName} {$this->lastName}です!</p>";
     }
 }
-

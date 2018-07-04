@@ -19,34 +19,36 @@ class TriangleFigure
     }
 
     // $baseのセッター
-    public function setBase(float $base) {
+    public function setBase(float $base)
+    {
         if ($base > 0) {
-           $this->base = $base;
+            $this->base = $base;
         }
     }
 
     // $hightのセッター
-    public function setHeight(float $height){
+    public function setHeight(float $height)
+    {
         if ($height > 0) {
             $this->heightht = $height;
         }
     }
 
     // $baseのゲッター
-    public function getBase(): float {
+    public function getBase(): float
+    {
         return $this->base;
     }
 
     // $Heightのゲッター
-    public function getHeight(): float {
+    public function getHeight(): float
+    {
         return $this->height;
     }
 
     //getterを呼び出して計算させる。
-    public function getArea() :float {
+    public function getArea() :float
+    {
         return $this->getBase() * $this->getBase() / 2;
     }
 }
-
-
-

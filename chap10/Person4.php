@@ -23,5 +23,5 @@ class Person
     }
 }
 
-$human = new Person("F","endo181");
+$human = new Person("F", "endo181");
 $human->showName();

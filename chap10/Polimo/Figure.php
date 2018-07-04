@@ -8,6 +8,7 @@
 
 // インターフェース
 // 配下が全て抽象メソッドなので、abstractを宣言しなくてもよい
-interface IFigure {
-    function getArea() : float;
+interface IFigure
+{
+    public function getArea() : float;
 }

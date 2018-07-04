@@ -17,10 +17,8 @@ class TriangleFigure
         $this->height =1;
     }
 
-    public function getArea(): float {
+    public function getArea(): float
+    {
         return $this->base * $this->height /2;
     }
 }
-
-
-

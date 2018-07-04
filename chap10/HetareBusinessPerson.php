@@ -8,9 +8,11 @@
 
 require_once 'BusinessPerson.php';
 
-class HetareBusinessPerson extends BusinessPerson {
+class HetareBusinessPerson extends BusinessPerson
+{
     // BusinessPersonクラスのworkメソッドをオーバライド
-    public function work() {
+    public function work()
+    {
 //        BusinessPerson::work(); これでもいける
         parent::work(); // superクラス（BusinessPerson）の親メソッド
         print 'ってな話ってわけですよ';

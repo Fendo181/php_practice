@@ -13,7 +13,8 @@ trait MachineTrait
 {
     private $starting = "Starting....Start!";
 
-    public function run(){
+    public function run()
+    {
         print $this->starting;
     }
 }

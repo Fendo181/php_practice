@@ -8,8 +8,8 @@
 
 class Area
 {
-    public static function circle(float $redius): float {
-        return pow($redius,2) * 3.14;
+    public static function circle(float $redius): float
+    {
+        return pow($redius, 2) * 3.14;
     }
 }
-
