@@ -8,8 +8,14 @@
 
 require_once 'Figure.php';
 
-class Square extends Figure
+class Square implements IFigure
 {
+    public function __construct(float $width, float $height)
+    {
+        $this->width = $width;
+        $this->height = $height;
+    }
+
     // メソッドをオーバライドする
     // 四角形の面積
     public function getArea() :float
