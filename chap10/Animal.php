@@ -20,7 +20,7 @@ class Cat extends Animal {
 }
 
 class Dog extends Animal {
-    public final function outputVoice(): string
+    public function outputVoice(): string
     {
         // TODO: Implement outputVoice() method.
         return "わん";
