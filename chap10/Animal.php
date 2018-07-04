@@ -33,3 +33,16 @@ print $cat->outputVoice();
 echo PHP_EOL;
 $dog = new Dog();
 print $dog->outputVoice();
+
+//継承しようとすると、エラーがでる
+class Bird extends Dog {
+    public function outputVoice(): string
+    {
+        // TODO: Implement outputVoice() method.
+        return "I'm a Bird";
+    }
+}
+
+echo PHP_EOL;
+$bird = new Bird();
+print $bird->outputVoice();
