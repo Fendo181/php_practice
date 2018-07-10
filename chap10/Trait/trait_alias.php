@@ -23,8 +23,10 @@ class MyClass {
     use MyTrait1, MyTrait2 {
       // 有効化したいメソッドを選択する
         MyTrait1::hoge insteadof MyTrait2;
+        MyTrait2::hoge as foo;
     }
 }
 
 $cls = new MyClass();
 $cls->hoge();
+$cls->foo();
