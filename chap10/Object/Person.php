@@ -23,6 +23,6 @@ class Person
     }
 }
 
-$human = new Person("F", "endo181");
-$human->showName();
-echo PHP_EOL;
+//$human = new Person("F", "endo181");
+//$human->showName();
+//echo PHP_EOL;
