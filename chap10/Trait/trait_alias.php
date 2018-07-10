@@ -19,8 +19,11 @@ trait MyTrait2 {
 }
 
 class MyClass {
-    //　トレイト内の同じメソッドがあると競合してしまってエラーがおきる
-    use MyTrait1, MyTrait2;
+    //トレイト内の同じメソッドがあると競合してしまってエラーがおきる
+    use MyTrait1, MyTrait2 {
+      // 有効化したいメソッドを選択する
+        MyTrait1::hoge insteadof MyTrait2;
+    }
 }
 
 $cls = new MyClass();
