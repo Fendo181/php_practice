@@ -9,7 +9,7 @@
 // エラーハンドルを登録する。
 set_error_handler(
     function ($errno, $errstr, $file, $line, $context) {
-        throw new ErrorException($errstr, 0, $errno, $file, $line);
+        throw new ErrorException('引数が足りてないですよ！', 0, $errno, $file, $line);
     }
 );
 
