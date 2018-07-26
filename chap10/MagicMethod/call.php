@@ -9,5 +9,5 @@
 require_once 'Animal.php';
 
 $animal = new Animal();
-$animal->outputVoice('わんわん');
+$animal->outputVoice('わんわん', 'きゃんきゃん');
 print $animal->outputVoice();
