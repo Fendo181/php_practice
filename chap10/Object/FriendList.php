@@ -1,6 +1,6 @@
 <?php
 
-//IteratorAggregateはPHPが標準でもっている韻t−フェースです
+//IteratorAggregateはPHPが標準でもっているインターフェースです
 
 class FriendList implements IteratorAggregate
 {
