@@ -27,6 +27,8 @@ class FriendList implements IteratorAggregate
     }
 
     // オブジェクトを関数として実行します。
+    // __invokeメソッドはこのクラスで良く使われる際に利用すると良いでしょう。
+    // そうなると、毎回メソッドを呼び出さなくてもクラスに引数を与えるだけで、処理が可能となります。
     public function __invoke($index)
     {
         echo PHP_EOL;
