@@ -16,4 +16,4 @@ $list->add(new Person('高橋','清太郎'));
 
 $list2 = clone $list;
 // シャローコピー 参照はそのままのコピーになる。
-var_dump($list2(1) === $list(1)); #true
+var_dump($list2(1) === $list(1)); #false

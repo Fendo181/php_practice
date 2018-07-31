@@ -36,4 +36,47 @@ class FriendList implements IteratorAggregate
         echo PHP_EOL;
         return $this->list[$index];
     }
+
+//     cloneメソッドが呼び出されたときに実行される。
+    public function __clone()
+    {
+        foreach ($this->list as &$value) {
+            $value = clone $value;
+        }
+    }
 }
+
+
+
+//Wed 1 :MagicMethod [endu]# php clone_deep.php
+//object(FriendList)#1 (3) {
+//["version"]=>
+//  string(5) "1.0.0"
+//["name"]=>
+//  string(0) ""
+//["list":"FriendList":private]=>
+//  array(3) {
+//    [0]=>
+//    object(Person)#2 (2) {
+//    ["lastName"]=>
+//      string(6) "太郎"
+//    ["firstName"]=>
+//      string(6) "山田"
+//    }
+//    [1]=>
+//    object(Person)#3 (2) {
+//    ["lastName"]=>
+//      string(6) "遠藤"
+//["firstName"]=>
+//      string(6) "太徳"
+//    }
+//    [2]=>
+//    object(Person)#4 (2) {
+//    ["lastName"]=>
+//      string(6) "高橋"
+//["firstName"]=>
+//      string(9) "清太郎"
+//    }
+//  }
+//}
+
