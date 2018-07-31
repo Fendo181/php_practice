@@ -22,6 +22,16 @@ class Person
         $this->firstName = $firstName;
     }
 
+    // var_dumpが呼び出された際に呼ばれるメソッドです。
+    // 「名前」 => 「値」の形式で返すようにします。
+    public function __debugInfo()
+    {
+        return [
+            '名' => $this->firstName,
+            '性' => $this->lastName,
+        ];
+    }
+
     public function showName()
     {
         print "<p>僕の名前は{$this->firstName}{$this->lastName}です!</p>";
