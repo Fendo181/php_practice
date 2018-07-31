@@ -8,18 +8,15 @@
 
 class MyClass
 {
-
     public $pub = "pub";
     protected $pro = "protected";
     private $pr = "private";
 
     public function showProperty()
     {
-        foreach ($this as $key => $value)
-        {
+        foreach ($this as $key => $value) {
             print "{$key}:{$value}";
             echo PHP_EOL;
         }
     }
 }
-

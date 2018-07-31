@@ -6,7 +6,8 @@
  * Time: 8:31
  */
 
-class MyMail {
+class MyMail
+{
     //to 宛先、 subject 件名、message (本文)、プロパティを定義
     public $to;
     public $subject;
@@ -26,12 +27,13 @@ class MyMail {
         return $this->headers[$name];
     }
 
-    public function send() {
+    public function send()
+    {
         // $headersの内容を基にヘッダ情報(改行区切り)を生成
 
         $others= "";
 
-        foreach ($this->headers as $key => $value ){
+        foreach ($this->headers as $key => $value) {
             // プロパティに含まれる 「__」は「ーー」に変換する
             $key = str_replace('_', '-', $key);
             $others .= "{$key}:{$value}";
@@ -39,7 +41,6 @@ class MyMail {
 
         echo "メールを送信しました！";
 
-        mb_send_mail($this->to,$this->subject,$this->message,$others);
+        mb_send_mail($this->to, $this->subject, $this->message, $others);
     }
-
 }

@@ -23,14 +23,15 @@ trait AccessorTrait
     {
         // キーの有無をチェックし、存在しないキーをはエラー
         if ($this->props[$name]) {
-           return $this->props[$name];
+            return $this->props[$name];
         } else {
             throw new Exception("{$name}プロパティは存在していません!");
         }
     }
 }
 
-class MyTriangle {
+class MyTriangle
+{
     // アクセサトレイトを有効化させる
     use AccessorTrait;
 
@@ -40,7 +41,8 @@ class MyTriangle {
         'height' => 1
     ];
 
-    public function getArea(): float {
+    public function getArea(): float
+    {
         // __get
         return $this->base * $this->height /2;
     }
@@ -51,4 +53,3 @@ $cls = new MyTriangle();
 $cls->base = 10;
 $cls->height = 5;
 print $cls->getArea();
-

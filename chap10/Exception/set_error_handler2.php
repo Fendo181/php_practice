@@ -6,9 +6,11 @@
  * Time: 8:38
  */
 
-function hoge(int $x) {}
+function hoge(int $x)
+{
+}
 
-try{
+try {
     hoge('xxxx');
 } catch (Exception $exception) {
     print $exception->getMessage();

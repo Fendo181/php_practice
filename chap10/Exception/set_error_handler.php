@@ -14,7 +14,7 @@ set_error_handler(
 );
 
 
-try{
+try {
     mb_convert_encoding();
 } catch (ErrorException  $exception) {
     print $exception->getMessage(); //mb_convert_encoding() expects at least 2 parameters, 0 given%

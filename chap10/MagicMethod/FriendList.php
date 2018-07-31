@@ -79,4 +79,3 @@ class FriendList implements IteratorAggregate
 //    }
 //  }
 //}
-

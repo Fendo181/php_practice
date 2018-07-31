@@ -21,5 +21,4 @@ class Human
     {
         unset($this->human[$name]);
     }
-
 }
