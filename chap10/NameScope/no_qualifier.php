@@ -6,7 +6,7 @@
  * Time: 10:00
  */
 
-namespace chap10\hoge;
+namespace chap10\NameScope;
 
 // 非修飾
 // グローバル名前空間に属するPersonクラスを表している。

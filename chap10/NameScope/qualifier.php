@@ -6,7 +6,7 @@
  * Time: 10:04
  */
 
-namespace chap10;
+namespace chap10\NameScope;
 
 require_once 'hoge/MyClass.php';
 
