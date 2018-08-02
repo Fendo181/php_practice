@@ -18,7 +18,7 @@ require_once 'MyClass3.php';
 // コンパイルのタイミングでインポートをするので、制御構文ブロックのは配下で呼び出す事はできないです
 
 function hoge() {
-    use chap10\NameScope\MyClass;
+//    use chap10\NameScope\MyClass;
     print MyClass::showClass();
 }
 
