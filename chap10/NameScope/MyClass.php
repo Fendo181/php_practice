@@ -11,10 +11,12 @@
 // (3)ひとつのファイルは1つの名前空間に
 
 
-namespace chap10\hoge;
+namespace chap10\NameScope;
 
 class MyClass {
     public static function showClass() {
         print __CLASS__;
+        echo PHP_EOL;
+        echo "MyClass1";
     }
 }
