@@ -7,8 +7,10 @@
  */
 namespace chap10\NameScope;
 
-class MyClass2 {
-    public static function showClass() {
+class MyClass2
+{
+    public static function showClass()
+    {
         print __CLASS__;
         echo PHP_EOL;
         echo "MyClass2";

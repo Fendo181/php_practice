@@ -14,4 +14,3 @@ namespace chap10\NameScope;
 
 require_once 'MyClass.php';
 print MyClass::showClass(); ## chap10\hoge\MyClass%
-

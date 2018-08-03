@@ -17,12 +17,10 @@ require_once 'MyClass3.php';
 //(1) use はグローバルスコープ配下、またはNamespace配下で呼び出す
 // コンパイルのタイミングでインポートをするので、制御構文ブロックのは配下で呼び出す事はできないです
 
-function hoge() {
+function hoge()
+{
 //    use chap10\NameScope\MyClass;
     print MyClass::showClass();
 }
 
 hoge();
-
-
-

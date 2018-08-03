@@ -18,7 +18,5 @@ print $animal->outputVoice();
 
 
 //// 名前空間り
-$p = new Person('夏休み','太郎');
+$p = new Person('夏休み', '太郎');
 $p->showName();
-
-

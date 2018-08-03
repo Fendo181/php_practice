@@ -12,9 +12,5 @@ require_once 'hoge/MyClass.php';
 use chap10\NameScope\MyClass;
 use chap10\NameScope\hoge\MyClass as SubClass;
 
-
 print MyClass::showClass(); #chap10\NameScope\MyClass
 print SubClass::showClass(); #MyClass1chap10\NameScope\hoge\MyClass%
-
-
-

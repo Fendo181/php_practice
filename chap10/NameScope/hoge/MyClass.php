@@ -12,8 +12,10 @@
 
 namespace chap10\NameScope\hoge;
 
-class MyClass {
-    public static function showClass() {
+class MyClass
+{
+    public static function showClass()
+    {
         print __CLASS__;
     }
 }

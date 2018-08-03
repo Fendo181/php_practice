@@ -10,6 +10,7 @@ namespace chap10\NameScope;
 
 const AUTHOR = "Endo";
 
-function myFunc() {
+function myFunc()
+{
     return 'こんにちは！ PHP!';
 }

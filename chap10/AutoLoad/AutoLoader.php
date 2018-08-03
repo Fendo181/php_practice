@@ -7,6 +7,6 @@
  */
 
 // オートローダを登録する為の関数です
-spl_autoload_register(function ($name){
+spl_autoload_register(function ($name) {
     require_once "Class/$name.php";
 });

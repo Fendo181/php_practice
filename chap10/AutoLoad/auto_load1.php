@@ -8,5 +8,5 @@
 
 require_once 'AutoLoader.php';
 
-$p = new Person('夏休み','太郎');
+$p = new Person('夏休み', '太郎');
 $p->showName();
