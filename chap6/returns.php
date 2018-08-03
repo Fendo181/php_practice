@@ -6,6 +6,7 @@
  * Time: 8:43
  */
 
-function max_min(float ...$args): array{
+function max_min(float ...$args): array
+{
     return [max($args),min($args)];
 }

@@ -10,8 +10,8 @@ $str = "7人と小人と白雪姫\n101匹ワンちゃん";
 
 // $strの内容を先頭から検索して&マッチしたものを書き出す。
 
-if(preg_match_all('/^[0-9]{1,}/m',$str,$data)) {
-    foreach ($data[0] as $item){
+if (preg_match_all('/^[0-9]{1,}/m', $str, $data)) {
+    foreach ($data[0] as $item) {
         print  "マッチング結果: {$item} <br />";
     }
 }

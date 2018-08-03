@@ -12,6 +12,6 @@ $data = [ 'endo' => '23',
           'nomoto' => '23'
         ];
 
-foreach($data as $key => $value){
+foreach ($data as $key => $value) {
     print "{$key}の年齢は{$value}です";
 }

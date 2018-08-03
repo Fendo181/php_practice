@@ -7,7 +7,7 @@
  */
 
 $i = 1;
-while ($i < 6){
+while ($i < 6) {
     print "{$i}番目のループです！";
 //    $i++;
     sleep(1);

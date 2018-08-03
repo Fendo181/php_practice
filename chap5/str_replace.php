@@ -7,5 +7,5 @@
  */
 
 $str = "Endo Tech Blog";
-print str_replace("Tech","テック！",$str,$cunt);
+print str_replace("Tech", "テック！", $str, $cunt);
 print "{$cunt}個置き換えました！";

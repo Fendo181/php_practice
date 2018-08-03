@@ -10,7 +10,7 @@
 
 $drink = 'ブランデ';
 
-switch ($drink){
+switch ($drink) {
     case 'ビール':
     case 'ワイン':
     case '日本酒':

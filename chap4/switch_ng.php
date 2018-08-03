@@ -8,7 +8,7 @@
 
 $exp = 'XJAPAN';
 
-switch ($exp){
+switch ($exp) {
     case 0:
         print '値はゼロ。';
         break;

@@ -7,9 +7,9 @@
  */
 
 $data = ['PHP','Perl','Ruby','Python','JavaScript'];
-print implode(':',$data);
+print implode(':', $data);
 echo PHP_EOL;
-print implode('と',$data);
+print implode('と', $data);
 
 //PHP:Perl:Ruby:Python:JavaScript
 //PHPとPerlとRubyとPythonとJavaScript%

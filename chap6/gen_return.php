@@ -9,8 +9,8 @@
 function readLines(string $path)
 {
     $i = 0;
-    $file = fopen($path,'rb') or die('ファイルが見つかりませんでした');
-    while($line = fgets($file, 1024)) {
+    $file = fopen($path, 'rb') or die('ファイルが見つかりませんでした');
+    while ($line = fgets($file, 1024)) {
         $i++;
         yield $line;
     }
@@ -21,7 +21,7 @@ function readLines(string $path)
 
 // sample.datから行単位にテキストを出力
 $gen = readLines('sample.dat');
-foreach($gen as $line) {
+foreach ($gen as $line) {
     print $line. '</br>';
 }
 

@@ -13,4 +13,3 @@ $str_witin_100 = mb_substr($str, 0, 100);
 
 str_replace("\r\n", '', $text);
 echo mb_strlen($str_witin_100);
-

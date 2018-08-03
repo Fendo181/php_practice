@@ -6,12 +6,13 @@
  * Time: 23:06
  */
 
-for($i = 1; $i < 4; $i++){
+for ($i = 1; $i < 4; $i++) {
     $result = 0;
-    switch ($i){
+    switch ($i) {
         case 1:
-        case 3;
+        case 3:
             $result = $i * $i;
+            // no break
         case 2:
             //  switch文内ではbreakとして働く
             continue 2;

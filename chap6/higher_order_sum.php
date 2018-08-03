@@ -9,14 +9,16 @@
 // 高階関数
 // 関数内から
 
-function my_array_walk(array $array, callable $func){
+function my_array_walk(array $array, callable $func)
+{
     foreach ($array as $key => $value) {
         $func($value, $key);
     }
 }
 
 $result = 0;
-function sum(float $value, int $key) {
+function sum(float $value, int $key)
+{
     global $result;
     $result += $value;
 }

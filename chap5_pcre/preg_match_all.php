@@ -10,11 +10,12 @@
 
 $str= "彼の電話番号は0399-88-9875、私の電話番号は0398-99-1234です。郵便番号はどちらも687-1109です。";
 
-function br(){
+function br()
+{
     echo PHP_EOL;
 }
-if(preg_match_all('/([0-9]{2,4})-([0-9]{2,4})-([0-9]{4})/',$str, $data, PREG_SET_ORDER)){
-    foreach ($data as $item){
+if (preg_match_all('/([0-9]{2,4})-([0-9]{2,4})-([0-9]{4})/', $str, $data, PREG_SET_ORDER)) {
+    foreach ($data as $item) {
         print "電話番号: {$item[0]}";
         br();
         print "市外局番: {$item[1]}";

@@ -6,7 +6,8 @@
  * Time: 7:15
  */
 
-function checkScope(): string {
+function checkScope(): string
+{
     require_once 'scope_include.php';
     return $scope;
 }

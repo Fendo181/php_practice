@@ -8,8 +8,8 @@
 
 require_once('returns.php');
 
-$result = max_min(10,20,-5,34,78);
+$result = max_min(10, 20, -5, 34, 78);
 print_r($result);
 
-list($max,$min) = max_min(10,20,-5,34,78);
+list($max, $min) = max_min(10, 20, -5, 34, 78);
 print "最大値: {$max}、最小値: {$min}";

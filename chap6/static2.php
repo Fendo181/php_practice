@@ -6,7 +6,8 @@
  * Time: 7:27
  */
 
-function checkScope() {
+function checkScope()
+{
     // loca;
     static $x;
     return ++$x;
