@@ -5,6 +5,8 @@
  * Date: 2018/06/23
  * Time: 23:35
  */
+//
+namespace lib;
 
 class Person
 {
