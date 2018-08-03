@@ -13,7 +13,7 @@ $headers = "From: user@example.com";
 $headers = "Cc: yamada@example.com";
 $headers = "X-Mailer PHP7";
 
-if (mb_send_mail($to,$subject,$body,$headers)){
+if (mb_send_mail($to, $subject, $body, $headers)) {
     print "mail send!";
 } else {
     print "not send!";

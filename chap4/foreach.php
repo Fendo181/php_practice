@@ -8,6 +8,6 @@
 
 $data = ['高江', '掛谷', '遠藤'];
 
-foreach ($data as $value){
+foreach ($data as $value) {
     print $value;
 }

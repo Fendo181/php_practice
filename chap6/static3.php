@@ -7,7 +7,8 @@
  */
 
 
-function checkStatic() {
+function checkStatic()
+{
     static $x =0;
     $x++;
     print "unset前: {$x}";

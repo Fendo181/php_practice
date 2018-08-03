@@ -8,7 +8,7 @@
 
 $data = ['高江','青木','土井'];
 # 末尾に追加
-array_push($data,'遠藤', '高橋');
+array_push($data, '遠藤', '高橋');
 echo PHP_EOL;
 print_r($data);
 
@@ -23,10 +23,6 @@ echo PHP_EOL;
 print_r($data);
 
 //先頭から値を抜く。
-print array_unshift($data,'endo','takahashi');
+print array_unshift($data, 'endo', 'takahashi');
 echo PHP_EOL;
 print_r($data);
-
-
-
-

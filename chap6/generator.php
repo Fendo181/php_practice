@@ -6,15 +6,15 @@
  * Time: 10:49
  */
 
-function generator() {
+function generator()
+{
     yield 'あいうえお';
     yield 'かきくけこ';
     yield 'さしすせそ';
 }
 
 
-foreach (generator() as $value){
+foreach (generator() as $value) {
     print $value;
     echo PHP_EOL;
 }
-

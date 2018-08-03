@@ -12,7 +12,8 @@
 // global
 $x = 10;
 
-function checkScope(): int{
+function checkScope(): int
+{
 //    local
 //    ここは暗黙的に変数はなしで、0とみなされるので、1を返す。
     return ++$x;
@@ -24,4 +25,3 @@ print $x;
 #result
 //Notice: Undefined variable: x in /Users/endu/src/fendo181/php_repos/chap6/scope.php on line 12
 //110%
-

@@ -6,7 +6,8 @@
  * Time: 8:01
  */
 
-function increment(int &$num): int{
+function increment(int &$num): int
+{
     $num++;
     return $num;
 }

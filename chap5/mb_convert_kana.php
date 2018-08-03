@@ -8,5 +8,5 @@
 
 $str = "おはよう！";
 
-print  mb_convert_kana($str,'h'); //ｵﾊﾖｳ！
-print  mb_convert_kana($str,'C'); //オハヨウ！
+print  mb_convert_kana($str, 'h'); //ｵﾊﾖｳ！
+print  mb_convert_kana($str, 'C'); //オハヨウ！

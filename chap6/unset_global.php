@@ -9,7 +9,8 @@
 // global
 $x =10;
 
-function checkScope(): int {
+function checkScope(): int
+{
     // 関数内のglobal
     global $x;
 
@@ -21,4 +22,3 @@ function checkScope(): int {
 print checkScope(); #1
 echo PHP_EOL;
 print $x; #10
-

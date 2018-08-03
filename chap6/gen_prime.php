@@ -10,9 +10,10 @@
 function getPrimes()
 {
     $num = 2;
-    while (true)
-    {
-        if(isPrime($num)) { yield $num; }
+    while (true) {
+        if (isPrime($num)) {
+            yield $num;
+        }
         $num++;
     }
 }
@@ -22,8 +23,8 @@ function getPrimes()
 function isPrime(int $value) :bool
 {
     $prime_flag = true;
-    for ($i = 2; $i <= floor(sqrt($value)); $i++){
-        if($value % $i === 0 ){
+    for ($i = 2; $i <= floor(sqrt($value)); $i++) {
+        if ($value % $i === 0) {
             //割り切れたら素数でない。
             $prime_flag = false;
             break;
@@ -34,11 +35,11 @@ function isPrime(int $value) :bool
 
 //素数を順々に出力する。
 
-foreach(getPrimes() as $prime)
-{
+foreach (getPrimes() as $prime) {
     /* 素数が101以上になったら終了 */
-    if($prime > 50) { die(); }
+    if ($prime > 50) {
+        die();
+    }
     print $prime;
     echo PHP_EOL;
 }
-

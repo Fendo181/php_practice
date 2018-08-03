@@ -9,7 +9,7 @@
 $data = ['endo','takahashi','nomoto'];
 print_r($data);
 
-foreach ($data as &$value){
+foreach ($data as &$value) {
     $value = 'New'.$value;
 }
 //　元の配列の中身も変更が加えられる。

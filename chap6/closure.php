@@ -6,7 +6,8 @@
  * Time: 8:37
  */
 
-function my_array_walker(array $array, callable $func){
+function my_array_walker(array $array, callable $func)
+{
     foreach ($array as $key => $value) {
         $func($value, $key);
     }
@@ -14,8 +15,10 @@ function my_array_walker(array $array, callable $func){
 
 $data = ['endo', 'takahashi', 'natumi'];
 
-my_array_walker($data,
+my_array_walker(
+    $data,
     function ($value, $key) {
         print "{$key}:{$value}";
         echo PHP_EOL;
-    });
+    }
+);

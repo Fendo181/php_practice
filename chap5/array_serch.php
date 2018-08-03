@@ -7,6 +7,3 @@ var_dump(array_search('yokota', $data)); #false
 
 var_dump(array_search(15, $data)); #数値と文字列比較は `==`なのでint(3)
 var_dump(array_search(15, $data, true)); #false 第三引数にtrueを渡すと現道にチェックをする。
-
-
-

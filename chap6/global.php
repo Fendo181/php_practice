@@ -12,7 +12,8 @@
 // global
 $x = 10;
 
-function checkScope(): int{
+function checkScope(): int
+{
 //    local
     global  $x;
     return ++$x;

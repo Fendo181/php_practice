@@ -7,9 +7,11 @@
  */
 
 $data = ['endo', 'takahashi','nomoto'];
-foreach ($data as &$value){
+foreach ($data as &$value) {
     var_dump($data);
-    if ($value === 'nomoto'){ $data[] = 'mitani'; }
+    if ($value === 'nomoto') {
+        $data[] = 'mitani';
+    }
 }
 var_dump($data);
 

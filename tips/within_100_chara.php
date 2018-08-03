@@ -13,4 +13,3 @@ echo mb_strlen($str);
 // 100文字以内に収める。
 $str_witin_100 = mb_substr($str, 0, 100);
 print $str_witin_100;
-
