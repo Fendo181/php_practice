@@ -5,6 +5,7 @@
     <title>ポストデータ</title>
 </head>
 <body>
-こんにちは！ <?=$_POST['name'] ?>さん!
+<?php require_once 'Encode.php' ?>
+こんにちは！ <?=e($_POST['name']) ?>さん!
 </body>
 </html>
