@@ -6,6 +6,5 @@
 </head>
 <body>
 こんにちは！ <?=$_POST['name'] ?>さん!
-</form>
 </body>
 </html>
