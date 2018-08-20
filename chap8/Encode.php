@@ -6,6 +6,7 @@
  * Time: 9:34
  */
 
-function e(string $str, string $cahrset = 'UTF-8'): string {
+function e(string $str, string $cahrset = 'UTF-8'): string
+{
     return htmlspecialchars($str, ENT_QUOTES | ENT_HTML5, $cahrset);
 }
