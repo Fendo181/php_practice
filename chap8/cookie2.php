@@ -1,6 +1,6 @@
 <!--すべての出力に先立って宣言すべきです-->
 
-<?php setcookie('email', $_POST['email'], time() -3600);?>
+<?php setcookie('email', $_POST['email'], time()+(60*60*24*90));?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
