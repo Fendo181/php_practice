@@ -9,10 +9,10 @@
 <table border="1">
 <?php
 // $_SERVERのキー・値を順に取得する
-foreach($_SERVER as $key => $value) {
+foreach ($_SERVER as $key => $value) {
     // ($key)が「HTTP_」で始まる場合のみ、その値を出力する
-    if(mb_strpos($key, 'HTTP') === 0 ) {
-?>
+    if (mb_strpos($key, 'HTTP') === 0) {
+        ?>
 
 <tr valign="top">
 <th><?= e($key) ?></th>
