@@ -13,7 +13,7 @@ $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_SILENT);
 $db->exec('MECHA KUCHA');
 
 //エラーコードが「00000」がない場合はエラーが発生したとみなす
-if($db->errorCode() !== '00000') {
+if ($db->errorCode() !== '00000') {
     $info = $db->errorInfo();
     print "エラーコード{$info[0]}";
     br();
@@ -22,6 +22,7 @@ if($db->errorCode() !== '00000') {
     print "エラーメッセージ{$info[2]}";
 }
 
-function br(){
+function br()
+{
     echo PHP_EOL;
 }

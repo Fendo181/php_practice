@@ -11,11 +11,11 @@ $user = 'selfuser';
 $password = 'selfpass';
 
 try {
-// 接続をする
-    $db = new PDO($dsn,$user,$password);
-    print ('接続に成功しました');
-}catch (PDOException $e) {
+    // 接続をする
+    $db = new PDO($dsn, $user, $password);
+    print('接続に成功しました');
+} catch (PDOException $e) {
     print "接続エラーです: {$e->getMessage()}";
-}finally{
+} finally {
     $db = null;
 }
