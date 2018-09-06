@@ -14,5 +14,6 @@ function getDb()
 
     // DBの接続を確立させる
     $db = new PDO($dsn, $user, $password);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $db;
 }
