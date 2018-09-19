@@ -28,9 +28,10 @@ try {
     // SELECT命令の実行
     $stt = $db->prepare('SELECT * FROM book ORDER BY published DESC');
     $stt->execute();
+    $stt->fetch(PDO::FETCH_ASSOC);
 
     //結果セットの内容を表示する。
-    while ($row = $stt->fetch(PDO::FETCH_ASSOC)) {
+    foreach ($stt as $row ) {
         ?>
 <!-- データを表示する -->
 <tr>
