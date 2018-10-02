@@ -31,7 +31,7 @@ try {
     $stt->fetch(PDO::FETCH_ASSOC);
 
     //結果セットの内容を表示する。
-    foreach ($stt as $row ) {
+    foreach ($stt as $row) {
         ?>
 <!-- データを表示する -->
 <tr>

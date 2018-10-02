@@ -8,7 +8,7 @@
 
 require_once 'DbManager.php';
 
-try{
+try {
     $db = getDb();
     // 例外処理を有効化
     $db->getAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -17,7 +17,7 @@ try{
     $db->exec("INSERT INTO book(isbn,title,price,publish,published)VALUES ('112','独習PHP 第2版',3200,'翔泳社','2010-04-12')");
     // 制約キー違反
     $db->commit();
-}catch (PDOException $e){
+} catch (PDOException $e) {
     //ロールバック
     $db->rollBack();
     print "エラーメッセージ:{$e->getMessage()}";

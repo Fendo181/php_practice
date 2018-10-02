@@ -6,7 +6,8 @@
  * Time: 22:26
  */
 
-class Book {
+class Book
+{
     public $isbn;
     public $title;
     public $price;
