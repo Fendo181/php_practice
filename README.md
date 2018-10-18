@@ -20,7 +20,7 @@
 - 第6章:[ユーザ定義関数](https://github.com/Fendo181/php_repos/pull/8)
 - 第7章:標準クラスライブラリ
 - 第8章:[リクエスト情報](https://github.com/Fendo181/php_repos/pull/13)
-- 第9章:データベース連携
+- 第9章:[データベース連携](https://github.com/Fendo181/php_repos/pull/14)
 - 第10章:[オブジェクト制御構文](https://github.com/Fendo181/php_repos/pull/11)
 - 第11章:セキュリティ対策
 
