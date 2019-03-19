@@ -1,6 +1,6 @@
 <?php
 
-class Dog
+class Animal
 {
     protected $name;
     protected $voice;
@@ -34,14 +34,14 @@ class Dog
 }
 
 
-$dog = new Dog('ポコちゃん');
-$dog->bark();
+$dog = new Animal('Dog');
 $name = $dog->getName();
 echo  $name;
+$dog->bark();
 
 
-$fuwa = new Dog('ふわちゃん','こんにちは!');
-$fuwa->bark();
-$fuwa->getName();
-$name = $fuwa->getName();
+$cat = new Animal('Cat','ニャーニャー');
+$cat->getName();
+$name = $cat->getName();
 echo  $name;
+$cat->bark();
