@@ -45,5 +45,3 @@ $fuwa->bark();
 $fuwa->getName();
 $name = $fuwa->getName();
 echo  $name;
-
-
