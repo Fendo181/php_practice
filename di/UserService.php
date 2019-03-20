@@ -2,37 +2,39 @@
 
 class UserService
 {
-    public function notice(Sender $sender,$name,$message)
+    public function notice(NotifierInterface $sender,$name,$message)
     {
         $sender->sayHi($name,$message);
     }
 }
 
-
-class Sender
+// インーフェース
+Interface NotifierInterface
 {
-    public function sayHi($name,$message)
-    {
+    public function sayHi($name,$message);
+}
+
+class SayJP implements NotifierInterface
+{
+    public function sayHi($name,$message){
         echo "はい！{$name}さん! {$message}";
     }
 }
 
-class Hoge
+class SayEN implements NotifierInterface
 {
-    public function sayHi($name,$message)
-    {
-        echo "はい！{$name}さん! {$message}";
+    public function sayHi($name,$message){
+        echo "Yo！{$name}! What's Up!{$message}";
     }
 }
-
 
 
 $man = new UserService();
-$sender = new Sender();
-$man->notice($sender,'endo','こんばんわ!');
+$sender = new SayJP();
+$man->notice($sender,'endo','こんばんわ!'); //はい！endoさん! こんばんわ!
 
-$hoge = new Hoge();
-$man->notice($hoge,'endo','こんばんわ!');
+$sender = new SayEN();
+$man->notice($sender,'endo','こんばんわ!');  //yo！endo! What's Up!こんばんわ!
 
 
 
