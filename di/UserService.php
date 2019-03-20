@@ -17,9 +17,22 @@ class Sender
     }
 }
 
+class Hoge
+{
+    public function sayHi($name,$message)
+    {
+        echo "はい！{$name}さん! {$message}";
+    }
+}
+
+
+
 $man = new UserService();
 $sender = new Sender();
 $man->notice($sender,'endo','こんばんわ!');
+
+$hoge = new Hoge();
+$man->notice($hoge,'endo','こんばんわ!');
 
 
 
