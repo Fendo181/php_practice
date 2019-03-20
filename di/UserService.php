@@ -2,9 +2,15 @@
 
 class UserService
 {
-    public function notice(NotifierInterface $sender,$name,$message)
+    protected $sender;
+
+    public function __construct(NotifierInterface $sender)
     {
-        $sender->sayHi($name,$message);
+        $this->sender = $sender;
+    }
+    public function notice($name,$message)
+    {
+        $this->sender->sayHi($name,$message);
     }
 }
 
@@ -29,12 +35,13 @@ class SayEN implements NotifierInterface
 }
 
 
-$man = new UserService();
 $sender = new SayJP();
-$man->notice($sender,'endo','こんばんわ!'); //はい！endoさん! こんばんわ!
+$man = new UserService($sender);
+$man->notice('endo','こんばんわ!'); //はい！endoさん! こんばんわ!
 
 $sender = new SayEN();
-$man->notice($sender,'endo','こんばんわ!');  //yo！endo! What's Up!こんばんわ!
+$man = new UserService($sender);
+$man->notice('endo','こんばんわ!');  //yo！endo! What's Up!こんばんわ!
 
 
 
