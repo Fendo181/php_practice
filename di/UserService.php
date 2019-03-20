@@ -2,10 +2,8 @@
 
 class UserService
 {
-    public function notice($name,$message)
+    public function notice(Sender $sender,$name,$message)
     {
-        // UserServiceクラスはSenderクラスに依存している
-        $sender = new Sender();
         $sender->sayHi($name,$message);
     }
 }
@@ -20,7 +18,8 @@ class Sender
 }
 
 $man = new UserService();
-$man->notice('endo','こんばんわ!');
+$sender = new Sender();
+$man->notice($sender,'endo','こんばんわ!');
 
 
 
