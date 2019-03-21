@@ -11,7 +11,7 @@ class UserService
     public function notice($name,$message)
     {
         $this->sender->sayHi($name,$message);
-    }
+    } 
 }
 
 // インーフェース
@@ -42,7 +42,3 @@ $man->notice('endo','こんばんわ!'); //はい！endoさん! こんばんわ!
 $sender = new SayEN();
 $man = new UserService($sender);
 $man->notice('endo','こんばんわ!');  //yo！endo! What's Up!こんばんわ!
-
-
-
-
