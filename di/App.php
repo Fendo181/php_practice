@@ -36,14 +36,15 @@ class User
 {
     protected $storage;
 
-    function __construct($cookieName)
+    function __construct(SessionStorage $storage)
     {
-        $this->storage = new SessionStorage($cookieName);
+        $this->storage = $storage;
     }
 
     function setLanguage($language)
     {
         $this->storage->set('language', $language);
+        var_dump($_COOKIE);
     }
 
     function getLanguage()
@@ -52,7 +53,8 @@ class User
     }
 }
 
-$user = new User('TSST');
+$sessionStrage  =  new SessionStorage(' DI_SESSION_ID');
+$user = new User($sessionStrage);
 $user->setLanguage('jp');
 $user_language = $user->getLanguage();
 
