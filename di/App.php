@@ -1,7 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: endu
- * Date: 2019/03/22
- * Time: 0:02
- */
+
+$_SESSION['language'] = 'fr';
+
+$user_language = $_SESSION['language'];
+
+
+var_dump($user_language);
