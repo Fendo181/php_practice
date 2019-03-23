@@ -44,7 +44,6 @@ class User
     function setLanguage($language)
     {
         $this->storage->set('language', $language);
-        var_dump($_COOKIE);
     }
 
     function getLanguage()
