@@ -8,8 +8,9 @@
     ],
 
     "require": {
+        "illuminate/database": "v5.8.*"
     },
     "require-dev": {
-        "psy/psysh": "^0.9.9",
+        "psy/psysh": "^0.9.9"
     }
 }
