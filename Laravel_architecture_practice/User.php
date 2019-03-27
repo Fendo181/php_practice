@@ -38,3 +38,12 @@ $app->sayHi();
 $container = new \Illuminate\Container\Container();
 // makeでサービスコンテナを作成して、Userのインスタンスを受けとりメソッドを実行する
 $container->make('User')->sayHi();
+
+//買っているペットの名前が欲しい
+
+$dog = new Animal('ポコちゃん');
+$dogName = $dog->getName();
+echo $dogName;
+// 再度インスタンスを作成(あえて)
+$app = new User();
+$app->sayMyPetName($dogName);
