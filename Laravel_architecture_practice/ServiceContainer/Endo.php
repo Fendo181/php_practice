@@ -78,8 +78,10 @@ $container->make('Tw')->post();
 $container->bind('GameSoftInterface', 'GameSoft');
 
 
+
+$gameTitle = $container->make('GameSoft',['title' => 'Skyrimの新作']);
 // PS4クラスをインスタンス化した際に、自動で依存関係を解決させてくれる。
-$container->make('PS4')->play();
+$container->make('PS4',['gameSoft' =>$gameTitle]) ->play();
 
 
 
