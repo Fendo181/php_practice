@@ -1,5 +1,30 @@
 <?php
 
+require_once dirname(dirname(__DIR__ )). '/vendor/autoload.php';
+
+use Pimple\Container;
+
+$container = new Container();
+
+
+$container['gameSoft.title'] = '';
+
+$container['gameSoft'] = $container->factory(function($c){
+    return new GameSoft($c['gameSoft.title']);
+});
+
+$container['ps4'] = $container->factory(function ($c){
+    return new Ps4($c['gameSoft']);
+});
+
+$container['twitter_client'] = function ($c){
+    return new TwitterClient();
+};
+
+$container['endo'] = $container->factory(function($c) {
+    return new Endo($c['gameSoft'], $c['ps4'], $c['twitter_client']);
+});
+
 
 // インターフェースを作成
 interface GameSoftInterface
@@ -87,18 +112,10 @@ class Endo
 }
 
 
-$ps4Soft =new GameSoft('SEKIRO');
-$ps4 = new Ps4($ps4Soft);
-$twitter_client = new TwitterClient();
-
-$endo = new Endo($ps4Soft,$ps4,$twitter_client);
+$container['gameSoft.title'] = 'SEKIRO';
+$endo = $container['endo'];
 $endo->play();
 $endo->tweet();
 
-//給付はSEKIROを持ってきました！ SEKIROをプレイしたい！！！めっちゃ面白いなう！%
 
-
-
-
-
-
+//今日はSEKIROを持ってきました！ SEKIROをプレイしたい！！！めっちゃ面白いなう！%
