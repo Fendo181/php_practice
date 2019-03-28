@@ -65,6 +65,17 @@ class TwitterClient implements TwitterClientInterface
 }
 
 $container->make('TwitterClient')->post();
+$container->bind('Tw','TwitterClient');
+$container->make('Tw')->post();
+
+
+// GameSoftInterfaceとGameSoftをbindしとくと
+$container->bind('GameSoftInterface', 'GameSoft');
+
+
+// PS4クラスをインスタンス化した際に、自動で依存関係を解決させてくれる。
+$container->make('PS4')->play();
+
 
 
 //クラス作成
