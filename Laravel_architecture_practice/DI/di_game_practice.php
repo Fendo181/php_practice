@@ -47,7 +47,7 @@ class Ps4 implements GamePlayerInterface
 
     public function play()
     {
-        echo "{$this->gameSoft->getTitle()}をプレイしたい！！！";
+        echo "PS4で{$this->gameSoft->getTitle()}をプレイしたい！！！";
     }
 }
 
