@@ -88,10 +88,10 @@ class Endo
 
 
 $gamesoft =new GameSoft('SEKIRO');
-$famikon = new Ps4($gamesoft);
+$ps4 = new Ps4($gamesoft);
 $twitter_client = new TwitterClient();
 
-$nikonama = new Endo($gamesoft,$famikon,$twitter_client);
+$nikonama = new Endo($gamesoft,$ps4,$twitter_client);
 $nikonama->play();
 $nikonama->tweet();
 
