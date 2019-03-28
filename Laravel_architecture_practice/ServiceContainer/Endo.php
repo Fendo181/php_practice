@@ -38,6 +38,11 @@ Class GameSoft implements GameSoftInterface
     {
         return $this->title;
     }
+
+    public function sayTitle()
+    {
+        echo $this->title;
+    }
 }
 
 // PS4クラス
@@ -77,6 +82,9 @@ $container->bind('GameSoftInterface', 'GameSoft');
 $container->make('PS4')->play();
 
 
+
+/// Ps4クラスのbindとresolve(make)
+$container->make('GameSoft',['title' => 'SEKIRO'])->sayTitle();
 
 //クラス作成
 class Endo
