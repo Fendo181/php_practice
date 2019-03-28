@@ -103,9 +103,12 @@ $pse4 = $container->make('PS4',['gameSoft' =>$gameTitle]);
 // TwitterClientインスタンスを作成する
 $tweet = $container->make('TwitterClient');
 
+$container->bind('Endo',function() use ($gameTitle,$pse4,$tweet){
+    return new Endo($gameTitle,$pse4,$tweet);
+});
 
 
-$endo = new Endo($gameTitle,$pse4,$tweet);
+$endo = $container->make('Endo');
 $endo->play();
 $endo->tweet();
 
