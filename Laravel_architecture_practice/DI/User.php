@@ -5,9 +5,9 @@ class User
 {
     protected $service;
 
-    public function __construct()
+    public function __construct(ServiceInterface $service)
     {
-        $this->service = new Service();
+        $this->service = $service;
     }
 
     public function doSomething()
@@ -16,15 +16,36 @@ class User
     }
 }
 
-Class Service
+interface ServiceInterface
+{
+    public function sayHi();
+}
+
+
+Class HogeService implements ServiceInterface
 {
     public function sayHi()
     {
-        echo 'Hi!';
+        echo 'Hi! Hoge!';
+    }
+}
+
+Class FugaService implements ServiceInterface
+{
+    public function sayHi()
+    {
+        echo 'Hi! Fuga';
     }
 }
 
 
-$user = new User();
+// HogeService
+$service = new HogeService();
+$user = new User($service);
+$user->doSomething();
+
+// FugaService
+$service = new FugaService();
+$user = new User($service);
 $user->doSomething();
 
