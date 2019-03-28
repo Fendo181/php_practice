@@ -97,35 +97,6 @@ $endo->tweet();
 
 //給付はSEKIROを持ってきました！ SEKIROをプレイしたい！！！めっちゃ面白いなう！%
 
-//Xbox360に入れ替えてみる
-
-
-// PS4クラス
-class Xbox360 implements GamePlayerInterface
-{
-    private $gameSoft;
-
-    public function __construct(GameSoftInterface $gameSoft)
-    {
-        $this->gameSoft = $gameSoft;
-    }
-
-    public function play()
-    {
-        echo "Xbox360で{$this->gameSoft->getTitle()}をプレイしたい！！！";
-    }
-}
-
-
-$xbox360Soft =new GameSoft('Halo3');
-$xbox360 = new Xbox360($xbox360Soft);
-$twitter_client = new TwitterClient();
-
-$nikonama = new Endo($xbox360Soft,$xbox360,$twitter_client);
-$nikonama->play();
-$nikonama->tweet();
-
-
 
 
 
