@@ -18,5 +18,5 @@ class Cat
    }
 }
 
-$dog = new Dog();
+$dog = new Dog(); #わんわん！にゃーにゃー！%
 $dog ->barks();
