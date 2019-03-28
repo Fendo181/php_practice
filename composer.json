@@ -8,5 +8,11 @@
     ],
 
     "require": {
+        "illuminate/database": "v5.8.*",
+        "pimple/pimple": "^3.2"
+    },
+    "require-dev": {
+        "psy/psysh": "^0.9.9",
+        "phpunit/phpunit": "^8.0"
     }
 }
