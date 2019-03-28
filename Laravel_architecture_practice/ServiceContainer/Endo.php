@@ -69,25 +69,6 @@ class TwitterClient implements TwitterClientInterface
     }
 }
 
-$container->make('TwitterClient')->post();
-$container->bind('Tw','TwitterClient');
-$container->make('Tw')->post();
-
-
-// GameSoftInterfaceとGameSoftをbindしとくと
-$container->bind('GameSoftInterface', 'GameSoft');
-
-
-
-$gameTitle = $container->make('GameSoft',['title' => 'Skyrimの新作']);
-// PS4クラスをインスタンス化した際に、自動で依存関係を解決させてくれる。
-$container->make('PS4',['gameSoft' =>$gameTitle]) ->play();
-
-
-
-/// Ps4クラスのbindとresolve(make)
-$container->make('GameSoft',['title' => 'SEKIRO'])->sayTitle();
-
 //クラス作成
 class Endo
 {
@@ -115,6 +96,17 @@ class Endo
 }
 
 
+// GameSoftインスタンスを作成する
+$gameTitle = $container->make('GameSoft',['title' => 'SEKIRO']);
+// PS4インスタンスを作成する
+$pse4 = $container->make('PS4',['gameSoft' =>$gameTitle]);
+// TwitterClientインスタンスを作成する
+$tweet = $container->make('TwitterClient');
 
+
+
+$endo = new Endo($gameTitle,$pse4,$tweet);
+$endo->play();
+$endo->tweet();
 
 //今日はSEKIROを持ってきました！ SEKIROをプレイしたい！！！めっちゃ面白いなう！%
