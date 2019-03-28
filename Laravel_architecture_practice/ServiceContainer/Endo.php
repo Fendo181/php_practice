@@ -5,7 +5,6 @@ require_once dirname(dirname(__DIR__ )). '/vendor/autoload.php';
 $container = new \Illuminate\Container\Container;
 
 
-
 // インターフェースを作成
 interface GameSoftInterface
 {
@@ -106,7 +105,6 @@ $tweet = $container->make('TwitterClient');
 $container->bind('Endo',function() use ($gameTitle,$pse4,$tweet){
     return new Endo($gameTitle,$pse4,$tweet);
 });
-
 
 $endo = $container->make('Endo');
 $endo->play();
