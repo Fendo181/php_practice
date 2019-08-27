@@ -17,5 +17,11 @@
         "test": [
             "./vendor/phpunit/phpunit/phpunit --testdox --colors"
         ]
+    },
+    "autoload": {
+        "psr-4": {
+            "Test\\": "phpunit/tests",
+            "Chap9\\": "phpunit/chap9/src"
+        }
     }
 }
