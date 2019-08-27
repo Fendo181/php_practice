@@ -1,5 +1,5 @@
 <?php
-
+namespace Chap9;
 
 class SomeClass
 {
