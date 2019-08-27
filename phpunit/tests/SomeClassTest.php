@@ -1,6 +1,5 @@
 <?php
 namespace Test;
-
 use PHPUnit\Framework\TestCase;
 use Chap9;
 Use Psy;
@@ -13,7 +12,4 @@ class SomeClassTest extends TestCase
         eval(Psy\sh());
         $this->assertTrue(true);
     }
-
-
-
 }
