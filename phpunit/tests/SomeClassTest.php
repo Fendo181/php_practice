@@ -8,10 +8,10 @@ class SomeClassTest extends TestCase
 {
     public function testDoSomething()
     {
-        $stb = $this->createMock(Chap9\SomeClass::class);
+        $stub = $this->createMock(Chap9\SomeClass::class);
 
-        $stb->method('doSomething')->willReturn('Bye!');
+        $stub->method('doSomething')->willReturn('Bye!');
 
-        $this->assertEquals('Bye!', $stb->doSomething());
+        $this->assertEquals('Bye!', $stub->doSomething());
     }
 }
