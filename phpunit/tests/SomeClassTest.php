@@ -10,9 +10,15 @@ class SomeClassTest extends TestCase
     {
         $stub = $this->createMock(Chap9\SomeClass::class);
 
-        $stub->method('doSomething')->will($this->returnSelf());
+        $map = [
+            ['a', 'b', 'c', 'd'],
+        ];
 
-        $this->assertSame($stub, $stub->doSomething());
+
+        $stub->method('doSomething')->will($this->returnValueMap($map));
+
+        // $stub->doSomething() は、渡した引数に応じて異なる値を返します
+        $this->assertEquals('d', $stub->doSomething('a', 'b', 'c'));
 
     }
 }
