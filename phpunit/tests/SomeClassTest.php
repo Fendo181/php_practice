@@ -10,7 +10,7 @@ class SomeClassTest extends TestCase
     {
         $stub = $this->createMock(Chap9\SomeClass::class);
 
-        $stub->method('doSomething')->willReturn('Bye!');
+        $stub->method('doSomething')->will($this->returnValue('Bye!'));
 
         $this->assertEquals('Bye!', $stub->doSomething());
     }
