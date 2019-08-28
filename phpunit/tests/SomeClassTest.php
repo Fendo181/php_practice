@@ -9,7 +9,6 @@ class SomeClassTest extends TestCase
     public function testDoSomething()
     {
         $stb = new Chap9\SomeClass();
-        eval(Psy\sh());
-        $this->assertTrue(true);
+        $this->assertEquals('Hi!', $stb->doSomething());
     }
 }
