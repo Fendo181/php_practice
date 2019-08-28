@@ -10,8 +10,11 @@ class SomeClassTest extends TestCase
     {
         $stub = $this->createMock(Chap9\SomeClass::class);
 
-        $stub->method('doSomething')->will($this->returnValue('Bye!'));
+        $stub->method('doSomething')->will($this->returnArgument((0)));
 
-        $this->assertEquals('Bye!', $stub->doSomething());
+        $this->assertEquals('foo', $stub->doSomething('foo'));
+
+        // $stub->doSomething('bar') は 'bar' を返します
+        $this->assertEquals('bar', $stub->doSomething('bar'));
     }
 }
