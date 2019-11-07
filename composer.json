@@ -12,7 +12,18 @@
         "pimple/pimple": "^3.2"
     },
     "require-dev": {
-        "psy/psysh": "^0.9.9",
-        "phpunit/phpunit": "^8.0"
+        "phpunit/phpunit": "^8.3",
+        "psy/psysh": "^0.9.9"
+    },
+    "scripts": {
+        "test": [
+            "./vendor/phpunit/phpunit/phpunit --testdox --colors"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "Test\\": "phpunit/tests",
+            "Chap9\\": "phpunit/chap9/src"
+        }
     }
 }
