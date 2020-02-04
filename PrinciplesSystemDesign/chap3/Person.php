@@ -1,17 +1,22 @@
 <?php
 
-
 class Person
 {
     private $firstName;
     protected $lastName;
 
-    //これだけだとインスタンス変数を返すだけで何もしない
-    private function getFirstName() {
-        return $this->firstName;
+    public function __construct($firstName,$lastName)
+    {
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
     }
 
-    private function getLastName() {
-        return$this->lastName;
+    public function fullName() {
+        return "MyName is {$this->firstName}.{$this->lastName}";
     }
+
 }
+
+$endo = new Person("Endo","Futoshi");
+echo  $endo->fullName();
+
