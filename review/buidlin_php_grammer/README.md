@@ -16,7 +16,12 @@
   - マルチバイト(日本語)の文字列の長さを計測する
 - [mb_strpos](https://dotinstall.com/lessons/basic_php_functions/53904)
   - マルチバイトの文字列の中で特定の文字があるかを探す
-
+- [substr](https://www.php.net/manual/ja/function.substr)
+  -  文字列の一部分を返す
+- [substr_replace](https://www.php.net/manual/ja/function.substr-replace)
+  - 文字列の一部を置換する
+- [number_format](https://www.php.net/manual/ja/function.number-format.php)
+  - 数字を千の位毎にグループ化してフォーマットする
 
 ### 参考
 
