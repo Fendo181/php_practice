@@ -27,6 +27,23 @@
 - [preg_match_all](https://www.php.net/manual/ja/function.preg-match-all.php)
   - 正規表現にマッチすると、そのマッチした文字列を`matches`に格納する
 
+#### 数値関係
+
+- [ceil](https://www.php.net/manual/ja/function.ceil.php)
+  - 少数点を切り上げる
+- [floor](https://www.php.net/manual/ja/function.floor.php)
+  - 少数以下を切り捨てる
+- [round](https://www.php.net/manual/ja/function.ceil.php)
+  - 四捨五入して整数にする
+- [mt_rand](https://www.php.net/manual/ja/function.mt_rand.php)
+  - 乱数を設定する
+- [max](https://www.php.net/manual/ja/function.max_rand.php)
+  - 最大値を求める
+- [min](https://www.php.net/manual/ja/function.min_rand.php)
+  - 最小値を求める
+- [定義済み定数](https://www.php.net/manual/ja/math.constants.php)
+  - `M_PI`:パイ（円周率）
+  - `M_SQRT2`: 2 の平方根
 
 ### 参考
 
