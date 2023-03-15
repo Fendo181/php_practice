@@ -1,9 +1,7 @@
 <?php
 
 $scores = [30, 40, 50];
-
 print_r($scores);
-
 
 // 先頭に要素を追加するには array_unshift()
 array_unshift($scores, 10, 20);
