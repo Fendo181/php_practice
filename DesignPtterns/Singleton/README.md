@@ -10,4 +10,4 @@ Singletonパターンを使うことで、他のクラスとの独立性が高�
 
 ### Document
 
-- [PHPによるデザインパターン入門 - TemplateMethod〜処理を穴埋めする - Do You PHP はてブロ](http://shimooka.hateblo.jp/entry/20141212/1418363698)
+- [PHPによるデザインパターン入門 - Singleton〜いくつ作るかを制限する - Do You PHP はてブロ](https://shimooka.hateblo.jp/entry/20141212/1418363981)
