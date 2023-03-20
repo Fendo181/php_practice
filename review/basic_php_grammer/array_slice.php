@@ -6,7 +6,12 @@ $scores = [30, 40, 50, 60, 70];
 // array_push() などは元配列を直接変更していた。
 // array_slice() に関しては元配列は変更せずに新しい配列を作って返してくれる。
 
-$partial = array_slice($scores , 2, 3);
+// $partial = array_slice($scores , 2, 3);
 // 最後まで指定する時は最後の引数は必要ない
+$partial = array_slice($scores , 2);
 print_r($scores);
 print_r($partial);
+
+// マイナスの値を指定すると末尾から数え
+$partial1 = array_slice($scores , -2);
+print_r($partial1);
