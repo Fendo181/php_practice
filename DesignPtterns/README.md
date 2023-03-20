@@ -8,13 +8,16 @@
   - 振る舞い+クラス
   - TemplateMethodパターンは「継承」を利用しているパターンです
 - [Singleton](https://github.com/Fendo181/php_practice/tree/master/DesignPtterns/SingletonPattern)
+  - Singlegonとは「一枚札」や、「1つづつ起こるもの」の意味にります。
   - 振る舞い+オブジェクト
   - Singletonパターンは「カプセル化」を利用しているパターンです
   - Singletonパターンを使うことで、他のクラスとの独立性が高まり、クラス内部での仕様変更が他方に影響しなくなります。
   - 結果、保守性や再利用性が高くなります。
+- [Facade]()
+
+### それぞれのPHPのverで確認を行う
 
 ### 資料
 
 - [DesignPatternsPHP — DesignPatternsPHP 1.0 documentation](https://designpatternsphp.readthedocs.io/en/latest/)
 - [PHPによるデザインパターン入門 - 目次 - Do You PHP はてブロ](http://shimooka.hateblo.jp/entry/20141211/1418298136)
-
