@@ -23,7 +23,7 @@
 - [number_format](https://www.php.net/manual/ja/function.number-format.php)
   - 数字を千の位毎にグループ化してフォーマットする
 - [preg_match](https://www.php.net/manual/ja/function.preg-match.php)
-  -正規表現にマッチすると、そのマッチした最初の`matches`に格納する
+  - 正規表現にマッチすると、そのマッチした最初の`matches`に格納する
 - [preg_match_all](https://www.php.net/manual/ja/function.preg-match-all.php)
   - 正規表現にマッチすると、そのマッチした文字列を`matches`に格納する
 
