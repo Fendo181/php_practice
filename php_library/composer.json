@@ -1,0 +1,17 @@
+{
+    "name": "futoshiendo/php_library",
+    "autoload": {
+        "psr-4": {
+            "Futoshiendo\\PhpLibrary\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fendo181",
+            "email": "fendo181git@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "psy/psysh": "@stable"
+    }
+}
