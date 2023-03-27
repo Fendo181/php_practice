@@ -1,6 +1,6 @@
 ### PHP入門 ビルトイン関数編
 
-### 学んだ関数
+### 文字列操作
 
 - [sprintf](https://www.php.net/manual/ja/function.sprintf.php)
   - `%s`で文字列を、`%f`で浮動小数点の値を受け取れる。また、左詰めなどの指定方法も出来る。
@@ -27,23 +27,28 @@
 - [preg_match_all](https://www.php.net/manual/ja/function.preg-match-all.php)
   - 正規表現にマッチすると、そのマッチした文字列を`matches`に格納する
 
-#### 数値関係
+#### 数値操作
 
 - [ceil](https://www.php.net/manual/ja/function.ceil.php)
   - 少数点を切り上げる
 - [floor](https://www.php.net/manual/ja/function.floor.php)
   - 少数以下を切り捨てる
-- [round](https://www.php.net/manual/ja/function.ceil.php)
+- [round](https://www.php.net/manual/ja/function.round.php)
   - 四捨五入して整数にする
-- [mt_rand](https://www.php.net/manual/ja/function.mt_rand.php)
+- [mt_rand](https://www.php.net/manual/ja/function.mt-rand.php)
   - 乱数を設定する
-- [max](https://www.php.net/manual/ja/function.max_rand.php)
+- [max](https://www.php.net/manual/ja/function.max.php)
   - 最大値を求める
-- [min](https://www.php.net/manual/ja/function.min_rand.php)
+- [min](https://www.php.net/manual/ja/function.min.php)
   - 最小値を求める
+
+### 定義済み定数
+
 - [定義済み定数](https://www.php.net/manual/ja/math.constants.php)
   - `M_PI`:パイ（円周率）
   - `M_SQRT2`: 2 の平方根
+
+###
 
 ### 参考
 
