@@ -53,6 +53,19 @@
 - [array_slice]()
 - [array_splice()]
 - [array_fill]()
+- [array_merge](https://www.php.net/manual/ja/function.array-merge.php)
+  - 配列を連結させる。
+  - `$merged = array_merge($a,$b);`
+  - `$merged = [...$a, ...$b];` でも置き換えできる。
+- [array_unique](https://www.php.net/manual/ja/function.array-unique.php)
+  - 重複した値を取り除く。元配列に変更を加えずに新しい配列を作ってくれる、
+  - `$uniques = array_unique($merged);`
+- [array_diff](https://www.php.net/manual/ja/function.array-diff.php)
+  - 配列の差を計算する。
+  - `$dif1 = array_diff($a,$b);`
+- [array_intersect](https://www.php.net/manual/ja/function.array-intersect.php)
+  - 配列の共通項を計算する
+  - `$common = array_intersect($a,$b);`
 - [range]()
 - [count]()
 
