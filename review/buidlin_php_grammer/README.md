@@ -42,13 +42,25 @@
 - [min](https://www.php.net/manual/ja/function.min.php)
   - 最小値を求める
 
+### 配列を操作する関数
+
+あまり配列に頼りすぎないように注意をする
+
+- [array_unshift]()
+- [array_push]()
+- [array_shift]()
+- [array_pop]()
+- [array_slice]()
+- [array_splice()]
+- [array_fill]()
+- [range]()
+- [count]()
+
 ### 定義済み定数
 
 - [定義済み定数](https://www.php.net/manual/ja/math.constants.php)
   - `M_PI`:パイ（円周率）
   - `M_SQRT2`: 2 の平方根
-
-###
 
 ### 参考
 
