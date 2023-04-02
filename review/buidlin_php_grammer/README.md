@@ -66,6 +66,7 @@
 - [array_intersect](https://www.php.net/manual/ja/function.array-intersect.php)
   - 配列の共通項を計算する
   - `$common = array_intersect($a,$b);`
+- [array_map](https://www.php.net/manual/ja/function.array-map.php)
 - [range]()
 - [count]()
 
