@@ -67,8 +67,43 @@
   - 配列の共通項を計算する
   - `$common = array_intersect($a,$b);`
 - [array_map](https://www.php.net/manual/ja/function.array-map.php)
+  - 指定した配列の要素に**コールバック関数を適用する**
+
+```php
+$prices = [100, 200, 300];
+$newPrices = array_map(
+  // 無名関数
+  function($n) { return $n * 1.1;},
+  $prices
+);
+```
+
+- [array_filter](https://www.php.net/manual/ja/function.array-filter.php)
+  - コールバック関数を使用して、**配列の要素をフィルタリング**する
+
+```php
+<?php
+
+$numbers = range(1, 10);
+// 偶数だけ欲しい
+$evenNumbers = array_filter(
+  $numbers,
+  fn($n) => $n % 2 === 0
+);
+```
+
 - [range]()
 - [count]()
+
+
+#### array_map と array_filter の違い
+
+`array_map` は `array_filter`の大きな違いは区別して適用するか、しないかがでかい。
+後、引数の順番が逆。後に来るのが、`array_map`、先に来るのが`array_filter` です。
+
+>mapは、配列要素すべてに除算する関数を実行し、その計算結果を新しい配列で返しています。
+>filterは、配列要素の中で除算できる要素を探し、フィルタリングされた要素のみを配列で返しています。
+>mapは区別せずにすべての要素を返すのに対し、filterは条件内容によって要素を区別することが大きな違いです
 
 ### 定義済み定数
 
