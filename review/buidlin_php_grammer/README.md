@@ -1,4 +1,4 @@
-### PHP入門 ビルトイン関数編
+## PHP入門 ビルトイン関数編
 
 ### 文字列操作
 
@@ -91,7 +91,6 @@ $evenNumbers = array_filter(
   fn($n) => $n % 2 === 0
 );
 ```
-
 - [range]()
 - [count]()
 
@@ -104,6 +103,26 @@ $evenNumbers = array_filter(
 >mapは、配列要素すべてに除算する関数を実行し、その計算結果を新しい配列で返しています。
 >filterは、配列要素の中で除算できる要素を探し、フィルタリングされた要素のみを配列で返しています。
 >mapは区別せずにすべての要素を返すのに対し、filterは条件内容によって要素を区別することが大きな違いです
+
+#### 配列のソート関数
+
+ref: https://www.php.net/manual/ja/array.sorting.php
+
+- [sort](https://www.php.net/manual/ja/function.sort.php)
+  - 配列を昇順にソートする。
+  - このsortは既存のkeyを削除します
+- [sort](https://www.php.net/manual/ja/function.rsort.php)
+  - 配列を昇順にソートする
+  - このrsortはsortと同様に既存のkeyを削除します
+- [asort](https://www.php.net/manual/ja/function.asort.php)
+  - 連想キーと要素との関係を維持しつつ配列を昇順にソートする
+- [rasort](https://www.php.net/manual/ja/function.arsort.php)
+  - 連想キーと要素との関係を維持しつつ配列を降順にソートする
+- [ksort](https://www.php.net/manual/ja/function.ksort.php)
+  - 配列をキーで昇順にソートする
+- [krsort](https://www.php.net/manual/ja/function.krsort.php)
+  - 配列をキーで降順にソートする
+
 
 ### 定義済み定数
 
