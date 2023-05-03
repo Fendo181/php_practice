@@ -91,9 +91,6 @@ $evenNumbers = array_filter(
   fn($n) => $n % 2 === 0
 );
 ```
-- [range]()
-- [count]()
-
 
 #### array_map と array_filter の違い
 
@@ -122,6 +119,8 @@ ref: https://www.php.net/manual/ja/array.sorting.php
   - 配列をキーで昇順にソートする
 - [krsort](https://www.php.net/manual/ja/function.krsort.php)
   - 配列をキーで降順にソートする
+- [usort](https://www.php.net/manual/ja/function.usort)
+  - ユーザー定義の比較関数を使用して、配列を値でソートする
 
 
 ### 定義済み定数
