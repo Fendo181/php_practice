@@ -121,7 +121,9 @@ ref: https://www.php.net/manual/ja/array.sorting.php
   - 配列をキーで降順にソートする
 - [usort](https://www.php.net/manual/ja/function.usort)
   - ユーザー定義の比較関数を使用して、配列を値でソートする
-
+- [array-multisort](https://www.php.net/manual/ja/function.array-multisort.php)
+  - 複数または多次元の配列をソートする
+  - あまり使わない方がいい。
 
 ### 定義済み定数
 
