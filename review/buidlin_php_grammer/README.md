@@ -125,6 +125,18 @@ ref: https://www.php.net/manual/ja/array.sorting.php
   - 複数または多次元の配列をソートする
   - あまり使わない方がいい。
 
+### ファイル操作を行う関す
+
+- [fopen](https://www.php.net/manual/ja/function.fopen.php)
+  - fopen — ファイルまたは URL をオープンする
+  - `w`:書き出しのみでオープンします。
+    - ファイルポインタをファイルの先頭に置き、 ファイルサイズをゼロにします。ファイルが存在しない場合には作成を試みます。
+  - `r`:読み込みのみでオープンします。ファイルポインタをファイルの先頭に置きます。
+- [fwrite](https://www.php.net/manual/ja/function.fwrite.php)
+  - バイナリセーフなファイル書き込み処理
+- [fclose](https://www.php.net/manual/ja/function.fclose.php)
+  - オープンされたファイルポインタをクローズする
+
 ### 定義済み定数
 
 - [定義済み定数](https://www.php.net/manual/ja/math.constants.php)
