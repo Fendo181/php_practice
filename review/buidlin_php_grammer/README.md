@@ -44,15 +44,80 @@
 
 ### 配列を操作する関数
 
-あまり配列に頼りすぎないように注意をする
+```php
+<?php
+$scores = [30, 40, 50, 60, 70];
 
-- [array_unshift]()
-- [array_push]()
-- [array_shift]()
-- [array_pop]()
-- [array_slice]()
-- [array_splice()]
-- [array_fill]()
+array_unshift($scores, 10, 20); // 10, 20, 30, 40, 50, 60, 70
+array_push($scores, 80, 90); // 10, 20, 30, 40, 50, 60, 70, 80, 90
+
+$value1 = array_shift($scores) // 10
+print_r(scores) // 20, 30, 40, 50, 60, 70, 80, 90
+
+$value2 = array_shift($scores) // 90
+array_pop($scores) // 20, 30, 40, 50, 60, 70, 80
+
+$partial1 = array_slice($scores , 2);
+print_r($scores); // 20, 30, 40, 50, 60, 70, 80
+print_r($partial); // 40, 50, 60, 70, 80
+
+$partial12 = array_slice($scores , -2);
+print_r($partial1); // 60, 70, 80
+
+// 切り詰める使い方
+$scores1 = [30, 40, 50, 60, 70, 80];
+array_splice($scores1,2,3);
+print_r($scores1); // 30,40,80
+
+// 置換する方法
+$scores2 = [30, 40, 50, 60, 70, 80];
+array_splice($scores2,2,3,100);
+print_r($scores2); // 30,40,80,100
+
+// 指定した位置に要素を入れる方法
+$scores3 = [30, 40, 50];
+array_splice($scores3,2,0,100);
+print_r($scores3); // 20,40,100,50
+
+// 0のインデックスから 5 個分を 10 の値で埋めてねと書いてあげます。
+$scores4 = array_fill(0,5,10);
+// $scores4 = [10,10,10,10,10
+
+
+// 1~10 までの値を使って配列を順々に入れる
+// array1 = [1,2,3,4,5,6,7,8,9,10];
+$array1 = range(1,10);
+
+// 1~10までで、2刻みで値を使って配列を順々に入れる
+// array1 = [1,3,5,7,9];
+$array2 = range(1,2,10);
+```
+
+- [array_unshift](https://www.php.net/manual/ja/function.array-unshift.php)
+  - 一つ以上の要素を配列の最初に加える
+  - `array_unshift($scores, 10, 20)`
+- [array_push](https://www.php.net/manual/ja/function.array-push.php)
+  - 一つ以上の要素を配列の最後に追加する
+  - `array_push($scores, 60, 70)`
+- [array_shift](https://www.php.net/manual/ja/function.array-shift.php)
+  - 配列の先頭から要素を一つ取り出す
+  - `$value = array_shift($scores)`: この場合は先頭の要素にある `10` が `$value`に格納される
+- [array_pop](https://www.php.net/manual/ja/function.array-pop.php)
+  - 配列の末尾から要素を一つ取り出す
+  - `$value = array_pop($scores)`: この場合は先頭の要素にある `70` が `$value`に格納される
+- [array_slice](https://www.php.net/manual/ja/function.array-slice.php)
+  - 配列の一部を展開する
+  - `array_slice($scores , 2);`
+- [array_splice(https://www.php.net/manual/ja/function.array-splice.php)]
+  - 配列の一部を削除し、他の要素で置換する。または途中の要素を削除して詰める
+  - `array_splice(配列、位置、個数、要素)`で指定すると、削除した位置に要素を入れる事ができる
+- [array_fill](https://www.php.net/manual/ja/function.array-fill.php)
+  - 配列を指定した値で埋める
+  - `$scores = array_fill(0,5,10);`
+- [range](https://www.php.net/manual/ja/function.range.php)
+  - ある範囲の整数を有する配列を作成する
+  - `$scores = range(1,10);`: 1~10までの値を使って配列を順々に入れる
+  - `$scores = range(1,10,2);`: 1~10まで、2刻みで値を使って配列を順々に入れる
 - [array_merge](https://www.php.net/manual/ja/function.array-merge.php)
   - 配列を連結させる。
   - `$merged = array_merge($a,$b);`
