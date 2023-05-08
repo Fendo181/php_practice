@@ -79,16 +79,16 @@ $scores3 = [30, 40, 50];
 array_splice($scores3,2,0,100);
 print_r($scores3); // 20,40,100,50
 
-// 0のインデックスから 5 個分を 10 の値で埋めてねと書いてあげます。
+// 0のインデックスから 5 個分を 10 の値で埋めた配列を作成する
 $scores4 = array_fill(0,5,10);
 // $scores4 = [10,10,10,10,10
 
 
-// 1~10 までの値を使って配列を順々に入れる
+// 1~10 までの値を使って配列を作成する
 // array1 = [1,2,3,4,5,6,7,8,9,10];
 $array1 = range(1,10);
 
-// 1~10までで、2刻みで値を使って配列を順々に入れる
+// 1~10までで、2刻みで値を使って配列を作成する
 // array1 = [1,3,5,7,9];
 $array2 = range(1,2,10);
 ```
@@ -108,7 +108,7 @@ $array2 = range(1,2,10);
 - [array_slice](https://www.php.net/manual/ja/function.array-slice.php)
   - 配列の一部を展開する
   - `array_slice($scores , 2);`
-- [array_splice(https://www.php.net/manual/ja/function.array-splice.php)]
+- [array_splice](https://www.php.net/manual/ja/function.array-splice.php)
   - 配列の一部を削除し、他の要素で置換する。または途中の要素を削除して詰める
   - `array_splice(配列、位置、個数、要素)`で指定すると、削除した位置に要素を入れる事ができる
 - [array_fill](https://www.php.net/manual/ja/function.array-fill.php)
@@ -173,7 +173,7 @@ ref: https://www.php.net/manual/ja/array.sorting.php
 - [sort](https://www.php.net/manual/ja/function.sort.php)
   - 配列を昇順にソートする。
   - このsortは既存のkeyを削除します
-- [sort](https://www.php.net/manual/ja/function.rsort.php)
+- [rsort](https://www.php.net/manual/ja/function.rsort.php)
   - 配列を昇順にソートする
   - このrsortはsortと同様に既存のkeyを削除します
 - [asort](https://www.php.net/manual/ja/function.asort.php)
