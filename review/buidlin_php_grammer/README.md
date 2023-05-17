@@ -201,6 +201,9 @@ ref: https://www.php.net/manual/ja/array.sorting.php
   - バイナリセーフなファイル書き込み処理
 - [fclose](https://www.php.net/manual/ja/function.fclose.php)
   - オープンされたファイルポインタをクローズする
+- [fgets](https://www.php.net/manual/ja/function.fgets.php)
+  - ファイルポインタから 1 行取得する。
+  - fgetsは終端まで行くと`false`を返します
 
 ### 定義済み定数
 
