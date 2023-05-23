@@ -83,7 +83,6 @@ print_r($scores3); // 20,40,100,50
 $scores4 = array_fill(0,5,10);
 // $scores4 = [10,10,10,10,10
 
-
 // 1~10 までの値を使って配列を作成する
 // array1 = [1,2,3,4,5,6,7,8,9,10];
 $array1 = range(1,10);
@@ -165,6 +164,14 @@ $evenNumbers = array_filter(
 >mapは、配列要素すべてに除算する関数を実行し、その計算結果を新しい配列で返しています。
 >filterは、配列要素の中で除算できる要素を探し、フィルタリングされた要素のみを配列で返しています。
 >mapは区別せずにすべての要素を返すのに対し、filterは条件内容によって要素を区別することが大きな違いです
+
+>array_map は マッピング(写像)なので要素数を変えずに各要素を変化させるもの
+>array_filter は フィルタリング(ふるい落とし) なので各要素は変えずに要素数を減らすもの。って理解してます。
+>ref: https://twitter.com/todays_mitsui/status/1658972790568140800?s=20
+
+- https://twitter.com/kze_yoshi8/status/1658998018245529602?s=20
+
+他には[foreach, array_map, array_walkの比較 - Qiita](https://qiita.com/tadsan/items/0790bbb9a4d1b8264b23)も参考になる
 
 #### 配列のソート関数
 
