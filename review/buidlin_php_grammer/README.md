@@ -211,6 +211,14 @@ ref: https://www.php.net/manual/ja/array.sorting.php
 - [fgets](https://www.php.net/manual/ja/function.fgets.php)
   - ファイルポインタから 1 行取得する。
   - fgetsは終端まで行くと`false`を返します
+- [file_put_contents](https://www.php.net/manual/ja/function.file-put-contents.php)
+  - fopenを使わずに文字列をファイルに書き込む
+- [file_get_contents](https://www.php.net/manual/ja/function.file-get-contents.php)
+  - fopenを使わずにファイルの内容を全て文字列に読み込む
+- [file](https://www.php.net/manual/ja/function.file.php)
+  - ファイル全体を読み込んで配列に格納する
+  - 末尾の改行を無視して読むこむには以下のように指定する
+    - `$lines = file('names.txt',FILE_IGNORE_NEW_LINES);`
 
 ### 定義済み定数
 
