@@ -219,6 +219,8 @@ ref: https://www.php.net/manual/ja/array.sorting.php
   - ファイル全体を読み込んで配列に格納する
   - 末尾の改行を無視して読むこむには以下のように指定する
     - `$lines = file('names.txt',FILE_IGNORE_NEW_LINES);`
+- [opendir](https://www.php.net/manual/ja/function.opendir.php)
+  - ディレクトリハンドルをオープンして、操作を行う。
 
 ### 定義済み定数
 
