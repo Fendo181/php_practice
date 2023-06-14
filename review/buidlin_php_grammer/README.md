@@ -221,6 +221,9 @@ ref: https://www.php.net/manual/ja/array.sorting.php
     - `$lines = file('names.txt',FILE_IGNORE_NEW_LINES);`
 - [opendir](https://www.php.net/manual/ja/function.opendir.php)
   - ディレクトリをオープンして、操作を行う。
+- [globl](https://www.php.net/manual/ja/function.glob.php)
+  -  パターンにマッチするパス名を探す
+  -  `glob('data/*.txt'`
 
 ### 定義済み定数
 
