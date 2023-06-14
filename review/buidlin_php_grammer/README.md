@@ -205,7 +205,7 @@ ref: https://www.php.net/manual/ja/array.sorting.php
     - ファイルポインタをファイルの先頭に置き、 ファイルサイズをゼロにします。ファイルが存在しない場合には作成を試みます。
   - `r`:読み込みのみでオープンします。ファイルポインタをファイルの先頭に置きます。
 - [fwrite](https://www.php.net/manual/ja/function.fwrite.php)
-  - バイナリセーフなファイル書き込み処理
+  - バイナリセーフなファイル書き込み処理を行う
 - [fclose](https://www.php.net/manual/ja/function.fclose.php)
   - オープンされたファイルポインタをクローズする
 - [fgets](https://www.php.net/manual/ja/function.fgets.php)
@@ -220,12 +220,12 @@ ref: https://www.php.net/manual/ja/array.sorting.php
   - 末尾の改行を無視して読むこむには以下のように指定する
     - `$lines = file('names.txt',FILE_IGNORE_NEW_LINES);`
 - [opendir](https://www.php.net/manual/ja/function.opendir.php)
-  - ディレクトリハンドルをオープンして、操作を行う。
+  - ディレクトリをオープンして、操作を行う。
 
 ### 定義済み定数
 
 - [定義済み定数](https://www.php.net/manual/ja/math.constants.php)
-  - `M_PI`:パイ（円周率）
+  - `M_PI`:Π(円周率）
   - `M_SQRT2`: 2 の平方根
 
 ### 参考
