@@ -224,6 +224,12 @@ ref: https://www.php.net/manual/ja/array.sorting.php
 - [globl](https://www.php.net/manual/ja/function.glob.php)
   -  パターンにマッチするパス名を探す
   -  `glob('data/*.txt'`
+- [file_exists](https://www.php.net/manual/ja/function.file-exists.php)
+  - ファイルまたはディレクトリが存在するかどうかを調べる
+- [is_readable](https://www.php.net/manual/ja/function.is-readable.php)
+  - ファイルが読み込み可能かどうかを調べる
+- [is_writable](https://www.php.net/manual/ja/function.is-writable.php)
+  - ファイルが書き込み可能かどうかを調べる
 
 ### 定義済み定数
 
