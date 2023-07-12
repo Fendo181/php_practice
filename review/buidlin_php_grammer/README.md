@@ -237,6 +237,20 @@ ref: https://www.php.net/manual/ja/array.sorting.php
   - `M_PI`:Π(円周率）
   - `M_SQRT2`: 2 の平方根
 
+### 時間を扱う関数
+
+※これから紹介する `date()` や`mktime`、`strtotime`
+これらは32bit のマシンでは 2038 年以降にうまく動作しない問題がある。
+したがって `DateTime` クラスを使うのがオススメになります。
+
+- [date](https://www.php.net/manual/ja/function.date.php)
+  - Unixタイムスタンプを書式化する
+- [mktime](https://www.php.net/manual/ja/function.mktime.php)
+  - 日付を Unix のタイムスタンプとして取得する
+- [strtotime](https://www.php.net/manual/ja/function.strtotime.php)
+  - 英文形式の日付を Unix タイムスタンプに変換する
+
+
 ### 参考
 
 - [PHP入門 ビルトイン関数編 (全32回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_php_functions)
