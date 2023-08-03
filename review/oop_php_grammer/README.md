@@ -18,6 +18,38 @@ class User {
 }
 ```
 
+### インスタンスの生成までの流れ
+
+上記のクラスを使ってインスタンスを生成するには、`new` キーワードを使います。
+クラスはあくまでも **データ側の構造** なので、実態を呼び出してプロパティやメソッドを呼び出すには
+インスタンスを生成する必要があります。
+
+```php
+<?php
+// クラス(データ型の構造)
+class Post
+{
+  // プロパティ
+  public $text;
+  public $likes;
+
+  // メソッド
+  public function show()
+  {
+    printf('%s (%d)' . PHP_EOL, $this->text, $this->likes);
+  }
+}
+
+// インスタンス
+$post = new Post();
+$post->text = 'hello';
+$post->likes = 0;
+
+// インスタンスのメソッドを呼び出す
+$post->show(); // hello (0)
+```
+
+
 ## 参考
 
 ref: [PHP入門 オブジェクト編 (全26回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_php_objects)
