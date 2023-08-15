@@ -49,6 +49,29 @@ $post->likes = 0;
 $post->show(); // hello (0)
 ```
 
+### コンストラクタ
+
+インスタンスを生成する際に、自動的に呼び出されるメソッドを **コンストラクタ** と呼びます。
+
+```php
+<?php
+class Post
+{
+  public $text;
+  public $likes;
+
+  public function __construct($text,$likes)
+  {
+    $this->text = $text;
+    $this->likes = $likes;
+  }
+
+  public function show()
+  {
+    printf('%s (%d)' . PHP_EOL, $this->text, $this->likes);
+  }
+}
+```
 
 ## 参考
 
