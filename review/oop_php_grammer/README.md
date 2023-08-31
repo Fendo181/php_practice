@@ -73,6 +73,41 @@ class Post
 }
 ```
 
+### strict_type
+
+PHPは数値である 5 をコンストラクタに渡したとしても、 PHP はこれを文字列に変換して暗黙的に型変換をしてしまいます。
+
+```
+<?php
+
+class Post
+{
+  private string $text;
+
+  public function __construct($text)
+  {
+    $this->text = $text;
+  }
+
+  public function show()
+  {
+    printf('%s' . PHP_EOL, $this->text);
+  }
+}
+
+$posts = [];
+$posts[0] = new Post(5);
+$posts[0]->show(); #5
+```
+
+この場合明確に型変換をして、弾きたい場合は `strict_type` を使います。
+
+```php
+<?php
+declare(strict_types=1);
+```
+
+
 ## 参考
 
 ref: [PHP入門 オブジェクト編 (全26回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_php_objects)
