@@ -113,10 +113,11 @@ ref: https://www.php.net/manual/ja/language.oop5.static.php
 
 - staticプロパティ
   - インスタンスに紐付かないプロパティ
-  - クラスに紐付いたこちらのプロパティをクラスプロパティ
+  - クラスに紐付いたこちらのプロパティをクラスプロパティと呼ぶ
 - staticメソッド
   - インスタンスに紐付かないメソッド
-  - クラスに紐付いたメソッドのことをクラスメソッド
+  - クラスに紐付いたメソッドのことをクラスメソッドと呼ぶ
+  - https://www.php.net/manual/ja/language.oop5.static.php
 
 ```php
 <?php
@@ -156,6 +157,53 @@ $posts[1]->show();
 
 Post::showInfo(); //2
 ```
+
+### オブジェクト定数
+
+オブジェクト定数はself::を使ってアクセスします。
+また、`public const`で指定した場合には `Post::VERSION2`で指定することができます。
+
+```php
+<?php
+
+class Post
+{
+  private $text;
+  private static $count = 0;
+  // クラスに紐付いた定数(const)を「オブジェクト定数」と呼びます
+  private const VERSION1 = 0.1;
+  public const VERSION2 = 0.2;
+
+  public function __construct($text)
+  {
+    $this->text = $text;
+    self::$count++;
+  }
+
+  public function show()
+  {
+    printf('%s' . PHP_EOL, $this->text);
+  }
+
+  public static function showInfo()
+  {
+    printf('Count: %d' . PHP_EOL, self::$count);
+    printf('Version: %.1f' . PHP_EOL, self::VERSION1); //
+  }
+}
+
+$posts = [];
+$posts[0] = new Post('hello');
+$posts[1] = new Post('hello again');
+
+$posts[0]->show();
+$posts[1]->show();
+
+Post::showInfo();
+
+echo Post::VERSION2 . PHP_EOL;
+```
+
 
 ## 参考
 
