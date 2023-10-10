@@ -157,7 +157,6 @@ $posts[1]->show();
 Post::showInfo(); //2
 ```
 
-
 ## 参考
 
 ref: [PHP入門 オブジェクト編 (全26回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_php_objects)
