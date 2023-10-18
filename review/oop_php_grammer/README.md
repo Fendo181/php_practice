@@ -204,6 +204,34 @@ Post::showInfo();
 echo Post::VERSION2 . PHP_EOL;
 ```
 
+## クラスの継承
+
+- `extends`を使うことで親クラス(スーパークラス)のプロパティやメソッドを使うことができます。
+
+
+```php
+class Post // 親クラス、スーパークラス
+{
+  private $text;
+
+  public function __construct($text)
+  {
+    $this->text = $text;
+  }
+
+  public function show()
+  {
+    printf('%s' . PHP_EOL, $this->text);
+  }
+}
+
+// 継承クラス
+// extends Post とするだけで Post クラスのプロパティやメソッドを使うことができます。
+class SponsoredPost extends Post // 子クラス
+{
+
+}
+```
 
 ## 参考
 
