@@ -2,9 +2,9 @@
 
 ### 基本のクラス定義
 
-オブジェクト型を使うと、関連する変数や関数をまとめて管理できるのでコードの見通しがぐっとよくなるというメリットがあります。
-また今後の拡張性だったり、再利用性だったりも高まります。
-最初に`class` キーワードを使ってクラス名を指定して定義する。
+オブジェクト型を使うと関連する変数や関数をまとめて管理できるのでコードの見通しがよくなるというメリットがあります。また今後の拡張性だったり、再利用性だったりも高まります。
+
+クラスを使うには最初に`class` キーワードを使ってクラス名を指定して定義します。
 
 ```php
 <?php
@@ -73,11 +73,11 @@ class Post
 }
 ```
 
-### strict_type
+### strict_type について
 
 PHPは数値である 5 をコンストラクタに渡したとしても、 PHP はこれを文字列に変換して暗黙的に型変換をしてしまいます。
 
-```
+```php
 <?php
 
 class Post
@@ -110,6 +110,10 @@ declare(strict_types=1);
 ### static キーワード
 
 ref: https://www.php.net/manual/ja/language.oop5.static.php
+
+>クラスプロパティもしくはメソッドを `static` として宣言することで、 クラスのインスタンス化の必要なしにアクセスすることができます。 static として宣言されたプロパティやメソッドは、 インスタンス化されたオブジェクトの内部からも :: (スコープ定義演算子) を使ってコールできます。
+
+staticを使う事でインスタンスを生成しなくても、クラス自体に紐付いたプロパティやメソッドを設定することができます。よって、クラスで定義したメソッドをそのまま呼び出すことができます。(多様は厳禁)
 
 - staticプロパティ
   - インスタンスに紐付かないプロパティ
@@ -162,15 +166,15 @@ Post::showInfo(); //2
 
 オブジェクト定数はself::を使ってアクセスします。
 また、`public const`で指定した場合には `Post::VERSION2`で指定することができます。
+`private const`の場合には、クラス内でしかアクセスできないのでエラーになります。
+
 
 ```php
-<?php
-
 class Post
 {
   private $text;
   private static $count = 0;
-  // クラスに紐付いた定数(const)を「オブジェクト定数」と呼びます
+  // クラスに紐付いた定数を「オブジェクト定数」と呼びます
   private const VERSION1 = 0.1;
   public const VERSION2 = 0.2;
 
@@ -188,7 +192,7 @@ class Post
   public static function showInfo()
   {
     printf('Count: %d' . PHP_EOL, self::$count);
-    printf('Version: %.1f' . PHP_EOL, self::VERSION1); //
+    printf('Version: %.1f' . PHP_EOL, self::VERSION2); // 0.2
   }
 }
 
@@ -201,10 +205,11 @@ $posts[1]->show();
 
 Post::showInfo();
 
+echo Post::VERSION1 . PHP_EOL; // Uncaught Error: Cannot access private constant Post::VERSION1
 echo Post::VERSION2 . PHP_EOL;
 ```
 
-## クラスの継承
+### クラスの継承について
 
 - `extends`を使うことで親クラス(スーパークラス)のプロパティやメソッドを使うことができます。
 
@@ -231,6 +236,72 @@ class SponsoredPost extends Post // 子クラス
 {
 
 }
+```
+
+### Overridについて
+
+親クラスの一部のメソッドの挙動を維持したままで、子クラスでメソッドの内容を変更したい場合には、
+**Override** という機能を使います。
+以下のサンプルコードでは SponsoredPost クラスで show() メソッドをオーバーライドしています。
+
+```php
+<?php
+
+class Post
+{
+  // private $text;
+  protected $text;
+
+  public function __construct($text)
+  {
+    $this->text = $text;
+  }
+
+  // final キーワードはオーバーライドが禁止になる
+//   final public function show()
+//   {
+//     printf('%s' . PHP_EOL, $this->text);
+//   }
+
+  public function show()
+  {
+    printf('%s' . PHP_EOL, $this->text);
+  }
+}
+
+class SponsoredPost extends Post
+{
+  private $sponsor;
+
+  public function __construct($text, $sponsor)
+  {
+    parent::__construct($text); // 親クラスのプロパティをそのまま使う
+    $this->sponsor = $sponsor;
+  }
+
+  // Override
+  public function show()
+  {
+    // $this->text は Postクラス(親)で定義しているのでprotectedにしないと呼べない
+    printf('%s by %s' . PHP_EOL, $this->text, $this->sponsor);
+  }
+
+  public function showSponsor()
+  {
+    printf('%s' . PHP_EOL, $this->sponsor);
+  }
+
+}
+
+$posts = [];
+$posts[0] = new Post('hello');
+$posts[1] = new Post('hello again');
+$posts[2] = new SponsoredPost('hello hello', 'dotinstall');
+
+$posts[0]->show(); // hello // Post
+$posts[1]->show(); // hello again  // Post
+$posts[2]->show(); // hello hello by dotinstall // SponsoredPost exttends Post
+$posts[2]->showSponsor();
 ```
 
 ## 参考
