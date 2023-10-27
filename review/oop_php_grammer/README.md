@@ -304,6 +304,40 @@ $posts[2]->show(); // hello hello by dotinstall // SponsoredPost exttends Post
 $posts[2]->showSponsor();
 ```
 
+### クラスの型の継承
+
+クラスの型の継承については、以下のように親クラスの型( `Post`)を指定することで
+子クラスのインスタンスを生成することができます。
+
+```php
+<?php
+// 親クラス
+class Post
+{
+}
+
+// 小クラス
+class SponsoredPost extends Post
+{
+}
+
+$posts = [];
+$posts[0] = new Post('hello');
+$posts[1] = new Post('hello again');
+$posts[2] = new SponsoredPost('hello hello', 'dotinstall');
+
+// Postを継承しているクラスのデータ型だけの引数を受け取る
+function processPost(Post $post)
+{
+  $post->show();
+}
+
+foreach ($posts as $post) {
+  processPost($post);
+}
+```
+
+
 ## 参考
 
 ref: [PHP入門 オブジェクト編 (全26回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_php_objects)
