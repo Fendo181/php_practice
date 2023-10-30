@@ -402,8 +402,25 @@ foreach ($posts as $post) {
 ```
 
 
-これを更に抽象クラス(BasePost)側で共通化処理を行う
+更に抽象クラスには共通のプロパティをまとめる事ができる。
+抽象クラスはある程度開発の規模が大きくなってから使うが、子クラスのほうで定義を強制したいというルールを作りたい場合に使う。
 
+
+```php
+<?php
+
+abstract class BasePost
+{
+
+  protected $text;
+
+  public function __construct($text)
+  {
+    $this->text = $text;
+  }
+
+  abstract public function show();
+```
 
 ## 参考
 
