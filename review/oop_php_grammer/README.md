@@ -422,6 +422,8 @@ abstract class BasePost
   abstract public function show();
 ```
 
+抽象クラスと型の継承を組み合わせる事で、定義漏れを防ぎつつ、共通の型でまとめて処理できるメリッドがあります。
+
 ## 参考
 
 ref: [PHP入門 オブジェクト編 (全26回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_php_objects)
