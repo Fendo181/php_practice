@@ -421,8 +421,40 @@ abstract class BasePost
 
   abstract public function show();
 ```
-
+****
 抽象クラスと型の継承を組み合わせる事で、定義漏れを防ぎつつ、共通の型でまとめて処理できるメリッドがあります。
+
+### インターフェースについて
+
+インターフェースは抽象メソッドだけを持つことができて、その定義を好きなクラスに強制することができるという仕組みです。抽象クラスはメソッドを強制ができますが、インターフェースを作成するときは `interface` キーワードを使います。
+
+```php
+<?php
+
+interface LikeInterface
+{
+  // 抽象メソッド
+  public function like();
+}
+```
+
+インターフェースはクラスの継承関係を気にせずに気軽に好きなクラスに実装させていくことができます。
+また、継承したクラスでインスタンスを生成した場合には、引数でインターフェースを指定することで、インターフェースを継承したクラスのインスタンスを渡すことができます。
+
+```php
+$posts[0] = new Post('hello');
+$posts[3] = new PremiumPost('hello there', 300);
+
+
+function proseccLikeable(LikeInterface $likeable)
+{
+  $likeable->like();
+}
+
+proseccLikeable($posts[0]); // LikeInterfaceを継承しているPostのインスタンスを渡してあげる。
+proseccLikeable($posts[3]); // LikeInterfaceを継承しているPremiumPostのインスタンスを渡してあげる。
+
+```
 
 ## 参考
 
