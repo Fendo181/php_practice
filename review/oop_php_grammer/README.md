@@ -456,6 +456,24 @@ proseccLikeable($posts[3]); // LikeInterfaceを継承しているPremiumPostの�
 
 ```
 
+### トレイとについて
+
+トレイトはクラスの継承関係を気にせずに好きなクラスにメソッドを追加することができます。
+作る時はは `trait` キーワードを使います。トレイトは型ではないのでクラスの継承やインターフェースと違って、同じトレイトを使ったからといって、同じ型として扱うことができる訳ではないです。したがって過度に依存するとコードの構造が不透明になる可能性があるため、適切なバランスをとることが重要です
+
+```php
+trait LikeTrait
+{
+  private $likes = 0;
+
+  public function like()
+  {
+    $this->likes++;
+  }
+}
+```
+
+
 ## 参考
 
 ref: [PHP入門 オブジェクト編 (全26回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_php_objects)
