@@ -526,6 +526,29 @@ foreach ($posts as $post) {
 }
 ```
 
+### 例外処理
+
+PHPにおける例外処理は、`try` と `catch` というキーワードを使います。
+`try` の中で例外が発生した場合には、`catch` の中の処理が実行されます。
+
+例外処理の特徴としては、例外が発生した時点で処理が中断されるという点です。
+
+
+```php
+try {
+  $posts[0] = new Post('he');
+  $posts[1] = new Post('hello again');
+
+  foreach ($posts as $post) {
+    $post->show();
+  }
+} catch (Exception $e) {
+  echo $e->getMessage() . PHP_EOL;
+}
+```
+
+`Exception`はPHPの組み込みクラスで、例外の情報を持っています。
+`getMessage()` を使って例外のメッセージを取得する事ができます。
 
 
 ## 参考
