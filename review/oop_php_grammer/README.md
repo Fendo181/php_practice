@@ -473,6 +473,34 @@ trait LikeTrait
 }
 ```
 
+### オートロード
+
+PHPは外部から読み込むファイルを指定するために、`require` や `include` という関数を使います。
+しかし、これらの関数を使わなくても `spl_autoload_register`を使えば、クラスを読み込むことができます。
+`spl_autoload_register`は引数に関数を指定することができて、その関数の中でクラスを読み込む処理を書くことができます。
+
+```php
+<?php
+
+// require_once __DIR__ . '/Post.php';
+
+// new をしたときにそのクラスが読み込まれていなかったら呼ばれる関数
+// この関数の引数にはクラス名が入る
+// したがって、呼ばれなかったタイミングでクラス名をこの無名関数の引数として渡してくれるので、結果require_onceで呼び出すことができる
+spl_autoload_register(function ($class) {
+  require_once __DIR__ . '/' . $class . '.php';
+});
+
+$posts[0] = new Post('hello');
+$posts[1] = new Post('hello again');
+
+foreach ($posts as $post) {
+  $post->show();
+}
+```
+
+この関数を使えば、`require` や `include`を毎回定義しなくてもクラスを読み込むことができます。
+
 
 ## 参考
 
