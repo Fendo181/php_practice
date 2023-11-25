@@ -501,6 +501,32 @@ foreach ($posts as $post) {
 
 この関数を使えば、`require` や `include`を毎回定義しなくてもクラスを読み込むことができます。
 
+### 名前空間
+
+PHPにおける名前空間は、クラス名や関数名の衝突を防ぐために使われます。
+名前空間を使うことで、同じクラス名を使っても、名前空間が違えば別のクラスとして扱うことができます。
+
+```php
+<?php
+
+// use Dotinstall\MyPHPApp as MyPHPApp;
+use Dotinstall\MyPHPApp;
+
+require('Post.php');
+
+class Post {
+  //  Fatal error: Cannot declare class Post, because the name is already in use in /home/dotinstall/Post.php on line 3
+}
+
+$posts[0] = new MyPHPApp\Post('hello');
+$posts[1] = new MyPHPApp\Post('hello again');
+
+foreach ($posts as $post) {
+  $post->show();
+}
+```
+
+
 
 ## 参考
 
