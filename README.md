@@ -1,3 +1,5 @@
+
+
 ## PHP基礎文法
 
 初心に戻ってPHPの基礎文法を学びます。
@@ -28,7 +30,7 @@
 
 [php-cs-fixer.phar](http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar)をディレクトリーに落としてくる。
 
-```php
+```bash
 php php-cs-fixer.phar fix /path/to/dir
 ``` 
 
